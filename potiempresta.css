@@ -1,0 +1,151 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(imagens/fundo1.png);
+    font-family: 'inter';
+}
+
+/*Personalização da barra*/
+::-webkit-scrollbar{
+    width: 15px;
+    background-color: #81d1e5;
+}
+
+::-webkit-scrollbar-thumb{
+    width: 15px;
+    background-color: #3598B2;
+}
+
+/*Navbar*/
+    .barra{
+        background-color: #78B5C8;
+    }
+
+    .barra img{
+        display: block; 
+        margin-top: -5px;
+        margin-left: 35px;
+    }
+
+    .group{
+        display: block; 
+        margin-left: 45px;
+        font-size: 27px;
+    }
+
+    .conta{
+        background-color: #5EA5D5;
+        color: #ffffff;
+    }
+
+    .conta:hover{
+        background-color: #5ea5d591;
+        color: #ffffff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
+    }
+
+/*Footer*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+}
+
+footer{
+    width: 100%;
+    color: #f5f5f5;
+    margin-top: 50px;
+}
+
+/*footer p, h3, a{
+    font-family: 'Darker Grotesque', serif;
+}*/
+
+.redes, h3{
+    color: #2AA495;
+    font-family: 'Coustard', sans-serif;
+}
+
+.redes{
+    margin-top: -20px;
+}
+
+.footer-link{
+    text-decoration: none;  
+}
+
+#footer_content{
+    background-color: #CEEBF4;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 3rem 3.5rem;
+    opacity: 0.8;
+}
+
+#footer_contacts h1{
+    margin-bottom: 0.75rem;
+}
+
+#footer_social_media{
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+#footer_social_media .footer-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5rem;
+    width: 2.5rem;
+    color: #ffffff;
+    border-radius: 50%;
+    transition: all 0.4s;
+}
+
+#footer_social_media .footer-link i{
+    font-size: 1.5rem;
+}
+
+#footer_social_media .footer-link:hover{
+    opacity: 0.3;
+}
+
+#instagram{
+    background: linear-gradient(#7f37c9, #ff2992, #ff9807);
+}
+
+#site{
+    background-color: #4dc4ff;
+}
+
+#youtube{
+    background-color: #ff0000 ;
+}
+
+.footer-list{
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    list-style: none;
+}
+
+.footer-list .footer-link{
+    color: #3598B2;
+    transition: all 0.4s;
+}
+
+.footer-list .footer-link:hover{
+    color: #ffffff;
+}
+
+.footer-list p{
+    color: #3598B2;
+    transition: all 0.4s;
+}
+
+.footer-list p:hover{
+    color: #ffffff;
+}
+

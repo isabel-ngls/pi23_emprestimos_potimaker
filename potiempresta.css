@@ -1,7 +1,7 @@
 body{
     margin: 0;
     padding: 0;
-    background-image: url(imagens/fundo1.png);
+    background-color: #E5EEF8;
     font-family: 'inter';
 }
 
@@ -52,10 +52,17 @@ body{
     letter-spacing: 1px;
 }
 
+.espaço{
+    height: 40vh;
+}
+
 footer{
     width: 100%;
     color: #f5f5f5;
     margin-top: 50px;
+    bottom: 0;
+    width: 100%;
+    margin-top: auto;
 }
 
 .redes, h3{
@@ -145,3 +152,124 @@ footer{
     color: #ffffff;
 }
 
+@media screen and (max-width: 768px){
+    #footer_content{
+        grid-auto-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 426px){
+    #footer_content{
+        grid-template-columns: repeat(1, 1fr);
+        padding: 3rem 2rem;
+    }
+    #footer_contacts{
+        padding-left: 30px;
+    }
+    #footer_social_media{
+        padding-left: 15px;
+    }
+}
+
+/*Página inicial*/
+/*.page1{
+    background-color: #E5EEF8;
+}
+.page2{
+    background-color: #FFFFFF;
+}
+.page3{
+    background-color: #CEEBF4;
+}
+.page4{
+    background-color: #FFFFFF;
+}
+.page5{
+    background-color: #FFFFFF;
+}
+.page6{
+    background-color: #E5EEF8;
+}
+
+.interface{
+    height: 100vh;
+    scroll-snap-type: y mandatory;
+    overflow: scroll;
+}
+
+.teste{
+    height: 100vh;
+    scroll-snap-align: start;
+    display: flex;
+    position: sticky;
+    top: 0;
+    left: 0;
+    align-items: center;
+    justify-content: center;
+    color: #f5f5f5;
+}*/
+
+.home{
+    background-color: #E5EEF8;
+    height: 100vh;
+}
+
+.home h1{
+    font-family: 'Lexend', sans-serif;
+    margin-top: 120px;
+    margin-left: 220px;
+    color: #417086;
+}
+
+.home img{
+    margin-top: 220px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.botao{
+    margin-top: 70px;
+    margin-left: 300px;
+    background-color: #5EB9C5;
+    display: inline-block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 25px;
+    padding-left: 25px;
+    position: static;
+    text-align: justify;
+    border-radius: 50px;
+    font-size: 15px;
+    font-weight: bold;
+    box-shadow: 10px 5px 5px #315754;
+    transition: all 0.4s ease;
+}
+
+.botao a{
+    color: #ffff;
+    text-decoration: none;
+    transition: 0.3s;
+    font-family: 'Lexend', sans-serif;
+}
+
+.botao a:hover{
+    color: #5EB9C5;
+    margin-left: 20px;
+    padding-right: 15px;
+}
+
+.botao:hover{
+    background-color: #f5f5f5;
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+}
+
+.center {
+    text-align: center;
+    margin-top: -50px;
+}

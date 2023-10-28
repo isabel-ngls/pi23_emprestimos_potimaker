@@ -7,8 +7,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <!--Importação da fonte-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Coustard&family=Inter:wght@200;400;600&family=Lexend:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Coustard&family=Inter:wght@200;400;600&family=Lexend:wght@300;400;600&display=swap" rel="stylesheet">
     <!--Ícone da barra do navegador-->
     <link rel="icon" type="image/x-icon" href="imagens/flexicon.png">
     <!--Ícones do footer-->
@@ -165,11 +165,24 @@
       </div>
   </header>
 
-  <br>
-  <br>
-  <br>
-  <br>
+  <div class="content">
+  <section class="page1">
+    <div class="home">
+        <div class="div1">
+            <h1>Aqui o <br>conhecimento se <br>encontra e se <br>compartilha</h1>
+            <img class="comp" src="imagens/icon_comp.png" alt="Ícone de computador" width="650px">
+                <div class="botao">
+                    <a href="#quemsomos">Nos conheça</a>
+                </div>
+        </div>
+    </div>
+    <div class="center">
+        <img src="imagens/seta.png" alt="Ícone de seta para baixo" width="100px">
+    </div>
+    </section>
+    </div>
 
+    
   <div class="espaço"></div>
       <!--Rodapé-->
         <footer>

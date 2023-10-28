@@ -196,10 +196,17 @@
                         <h3>Desenvolvido por</h3>
                     </li>
                     <li>
-                        <a href="mailto:flavia.macena@escolar.ifrn.edu.br" class="footer-link" target="blank">Flávia Jamily</a>
+                        <a href="mailto:brito.beatriz@escolar.ifrn.edu.br" class="footer-link" target="blank">Emilly Beatriz</a>
+                    </li>
+                    <li>
+                        <a href="mailto:flavia.macena@escolar.ifrn.edu.br" class="footer-link" target="blank">Flavia Jamily</a>
                     </li>
                     <li>
                         <a href="mailto:isabel.natalia@escolar.ifrn.edu.br" class="footer-link" target="blank">Isabel Natalia</a>
+                    </li>
+                    <li>
+                        <a href="mailto:matias.rosendo@escolar.ifrn.edu.br" class="footer-link" target="blank">Letícia Matias</a>
+                    </li>
                     <li>
                         <a href="mailto:lima.sarah@escolar.ifrn.edu.br" class="footer-link" target="blank">Sarah Lima</a>
                     </li>
@@ -222,6 +229,5 @@
             </div>
         </footer>
 
-  
 </body>
 </html>

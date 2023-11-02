@@ -242,31 +242,31 @@ input[type="submit"]:hover {
 
             <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
               <li>
-                <a href="#" class="nav-link text-secondary">
+                <a href="index.php" class="nav-link text-white">
                   <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#home"/></svg>
                   Home
                 </a>
               </li>
               <li>
-                <a href="#" class="nav-link text-white">
-                <img src="imagens/logoPM(branca).png" width="34px" alt="Logo do Potimaker"><use xlink:href="#speedometer2"/></svg>
+                <a href="index.php" class="nav-link text-white">
+                <img src="imagens/logoPM(branca).png" width="34px" alt="Logo do Potimaker"><use xlink:href="#poti"/></svg>
                   O Potimaker
                 </a>
               </li>
               <li>
-                <a href="#" class="nav-link text-white">
+                <a href="index.php" class="nav-link text-white">
                 <i class="fa-solid fa-people-group group"></i><use xlink:href="#table"/>
                   Quem somos
                 </a>
               </li>
               <li>
-                <a href="#" class="nav-link text-white">
+                <a href="index.php" class="nav-link text-white">
                   <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#grid"/></svg>
-                  Apostilas
+                  Como funciona
                 </a>
               </li>
               <li>
-                <a href="#" class="nav-link text-white">
+                <a href="#administração" class="nav-link text-white">
                   <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#people-circle"/></svg>
                   Administração
                 </a>

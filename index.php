@@ -231,7 +231,7 @@
     <section class="page5" >
         <img src="imagens/icon3.png" alt="Ícone de pessoa com livros" width="300px">
         <h1>“A busca pelo conhecimento é a <br>mais nobre das buscas" </h1>
-        <p>- Leonardo da Vinci</p>
+        <p>- Autor desconhecido</p>
     </section>
 
   <div class="espaço"></div>

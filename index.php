@@ -7,8 +7,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <!--Importação da fonte-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Coustard&family=Inter:wght@200;400;600&family=Lexend:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Coustard&family=Inter:wght@200;400;600&family=Lexend:wght@300;400;600&display=swap" rel="stylesheet">
     <!--Ícone da barra do navegador-->
     <link rel="icon" type="image/x-icon" href="imagens/flexicon.png">
     <!--Ícones do footer-->
@@ -123,25 +123,25 @@
                 </a>
               </li>
               <li>
-                <a href="#" class="nav-link text-white">
-                <img src="imagens/logoPM(branca).png" width="34px" alt="Logo do Potimaker"><use xlink:href="#speedometer2"/></svg>
+                <a href="#poti" class="nav-link text-white">
+                <img src="imagens/logoPM(branca).png" width="34px" alt="Logo do Potimaker"><use xlink:href="#poti"/></svg>
                   O Potimaker
                 </a>
               </li>
               <li>
-                <a href="#" class="nav-link text-white">
+                <a href="#quemsomos" class="nav-link text-white">
                 <i class="fa-solid fa-people-group group"></i><use xlink:href="#table"/>
                   Quem somos
                 </a>
               </li>
               <li>
-                <a href="#" class="nav-link text-white">
+                <a href="#funcionamento" class="nav-link text-white">
                   <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#grid"/></svg>
-                  Apostilas
+                  Como funciona
                 </a>
               </li>
               <li>
-                <a href="#" class="nav-link text-white">
+                <a href="#administração" class="nav-link text-white">
                   <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#people-circle"/></svg>
                   Administração
                 </a>
@@ -157,20 +157,85 @@
           </form>
 
           <div class="text-end">
-            <button type="button" class="btn btn-light text-dark me-2">Login</button>
-            <button type="button" class="btn conta">Criar conta</button>
+          <a href="login.php" class="btn btn-light text-dark me-2">Login</a>
+          <a href="cadastro.php" class="btn conta">Criar conta</a>
             </div>
           </div>
         </div>
       </div>
   </header>
 
-  <br>
-  <br>
-  <br>
-  <br>
+  <div class="content">
+  <section class="page1">
+    <div class="home">
+        <div class="div1">
+            <div class="texto"><h1>Aqui o <br>conhecimento se <br>encontra e se <br>compartilha</h1></div>
+            <img class="comp" src="imagens/icon_comp.png" alt="Ícone de computador" width="650px">
+                <div class="botao">
+                    <a href="#quemsomos">Nos conheça</a>
+                </div>
+        </div>
+    </div>
+    <div class="center">
+        <img src="imagens/seta.png" alt="Ícone de seta para baixo" width="100px">
+    </div>
+    </div>
+    </section>
+
+    <section class="page2" id="poti">
+      <div class="poti">
+      <h2>O Potimaker</h2>
+      <p class="cont">Lorem ipsum dolor sit amet, <br>consectetur adipiscing elit. <br> Curabitur justo purus, pharetra <br>
+       sit amet ultricies sit amet, rutrum et nunc. <br>Suspendisse vel feugiat odio, sed finibus leo</p>
+
+       <div class="Potimaker">
+        <!--Arrumar depois<img src="imagens/pm1.png" alt="Imagem do FabLab Potimaker" width="450px">-->
+        </div> 
+       </div>
+    </section>
+
+    <section class="page3" id="quemsomos">
+      <h2>Quem somos</h2>
+      <p>Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit. <br>
+       Curabitur justo purus, pharetra <br>sit amet ultricies sit amet, <br>rutrum et nunc. Suspendisse <br>
+       vel feugiat odio, sed finibus leo</p>
+       <div class="icon">
+          <!--<img src="imagens/icon2.png" alt="Ícone de livro com prancheta" width="575px">-->
+       </div>
+    </section>
+
+    <section class="page4"id="funcionamento" >
+      <h2>Como funciona</h2>
+      <div class="dividir">
+        <div class="box sec1">
+          <img src="imagens/cadastro.png" alt="Ícone de cadastro" width="375px">
+          <h4>Cadastro</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+          <img class="seta" src="imagens/seta.png" alt="Ícone de seta para baixo" width="100px">
+        </div>
+        <div class="box sec2">
+          <img src="imagens/livro.png" alt="Ícone de livro" width="375px">
+          <h4>Escolha da apostila</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+          <img src="imagens/seta.png" alt="Ícone de seta para baixo" width="100px">
+        </div>
+        <div class="box sec3">
+          <img src="imagens/prazo.png" alt="Ícone de calendário" width="375px">
+          <h4>Prazo</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+          <img src="imagens/seta.png" alt="Ícone de seta para baixo" width="100px">
+        </div>
+      </div>
+    </section>
+
+    <section class="page5" >
+        <img src="imagens/icon3.png" alt="Ícone de pessoa com livros" width="300px">
+        <h1>“A busca pelo conhecimento é a <br>mais nobre das buscas" </h1>
+        <p>- Leonardo da Vinci</p>
+    </section>
 
   <div class="espaço"></div>
+  
       <!--Rodapé-->
         <footer>
             <div id="footer_content">

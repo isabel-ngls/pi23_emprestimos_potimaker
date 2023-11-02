@@ -234,9 +234,8 @@
         <p>- Leonardo da Vinci</p>
     </section>
 
-
-    
   <div class="espaço"></div>
+  
       <!--Rodapé-->
         <footer>
             <div id="footer_content">

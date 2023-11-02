@@ -7,13 +7,14 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <!--Importação da fonte-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Coustard&family=Inter:wght@200;400;600&family=Lexend:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Coustard&family=Inter:wght@200;400;600&family=Lexend:wght@300;400;600&display=swap" rel="stylesheet">
     <!--Ícone da barra do navegador-->
     <link rel="icon" type="image/x-icon" href="imagens/flexicon.png">
     <!--Ícones do footer-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!--CSS-->
+    <link rel="stylesheet" type="text/css" href="perfil.css" />
     <link rel="stylesheet" type="text/css" href="potiempresta.css" />
     <title>Meu Perfil</title>
 
@@ -77,23 +78,9 @@
       .bd-mode-toggle .dropdown-menu .active .bi {
         display: block !important;
       }
-
-      /*Cadastro*/
-      body{
-    margin: 0;
-    padding: 0;
-    background-image: url(imagens/fundo_perf.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    align-items: center;
-    justify-content: center;
-}
-
-</style>
-</head>
-
+    </style>
 <body>
+
 <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
   <symbol id="bootstrap" viewBox="0 0 118 94">
     <title>Bootstrap</title>
@@ -136,25 +123,25 @@
                 </a>
               </li>
               <li>
-                <a href="#" class="nav-link text-white">
-                <img src="imagens/logoPM(branca).png" width="34px" alt="Logo do Potimaker"><use xlink:href="#speedometer2"/></svg>
+                <a href="#poti" class="nav-link text-white">
+                <img src="imagens/logoPM(branca).png" width="34px" alt="Logo do Potimaker"><use xlink:href="#poti"/></svg>
                   O Potimaker
                 </a>
               </li>
               <li>
-                <a href="#" class="nav-link text-white">
+                <a href="#quemsomos" class="nav-link text-white">
                 <i class="fa-solid fa-people-group group"></i><use xlink:href="#table"/>
                   Quem somos
                 </a>
               </li>
               <li>
-                <a href="#" class="nav-link text-white">
+                <a href="#funcionamento" class="nav-link text-white">
                   <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#grid"/></svg>
-                  Apostilas
+                  Como funciona
                 </a>
               </li>
               <li>
-                <a href="#" class="nav-link text-white">
+                <a href="#administração" class="nav-link text-white">
                   <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#people-circle"/></svg>
                   Administração
                 </a>
@@ -170,76 +157,105 @@
           </form>
 
           <div class="text-end">
-            <a href="login.php" class="btn btn-light text-dark me-2">Login</a>
-            <a href="cadastro.php" class="btn conta">Criar conta</a>
+          <a href="login.php" class="btn btn-light text-dark me-2">Login</a>
+          <a href="cadastro.php" class="btn conta">Criar conta</a>
             </div>
           </div>
         </div>
       </div>
   </header>
 
-  
+    <div class="perfil">
+    <div class="card">
+  <div class="left-container">
+    <img src="imagens/userr.png" alt="Ícone de estudante">
+    <h2 class="gradienttext">Aluno</h2>
+    <p class="centralizar">Matrícula: 00000000000000</p>
+    <p class="centralizar">Email: aluno@escolar.com</p>
+  </div>
+  <div class="right-container">
+    <h3 class="gradienttext">Apostilas emprestadas</h3>
+    <table>
+        <tr>
+            <td>Apostila 1</td>
+            <td>Data: 00/00/00</td>
+          </tr>
+      <tr>
+        <td>Apostila 2</td>
+        <td>Data: 00/00/00</td>
+      </tr>
+      <tr>
+        <td>Apostila 3</td>
+        <td>Data: 00/00/00</td>
+      </tr>
+      <tr>
+        <td>Apostila 4</td>
+        <td>Data: 00/00/00</td>
+      </tr>
+    </table>
+</div>
+</div>
+</div>
 
-  <div class="espaço"></div>
-      <!--Rodapé-->
-        <footer>
-            <div id="footer_content">
-                <div id="footer_contacts">
-                    <h1><img src="imagens/logo.png"  width="190" height="auto" alt="logo do quiz"></h1>
-                    <p class="redes">Conheça melhor o Potimaker:</p>
- 
-                    <div id= "footer_social_media">
-                        <a href="https://www.instagram.com/potimaker.ifrn/" class="footer-link" id="instagram">
-                            <i class="fa-brands fa-instagram"></i>
-                        </a>
- 
-                        <a href="https://www.youtube.com/@potimakerifrn" class="footer-link" id="youtube">
-                            <i class="fa-brands fa-youtube"></i>
-                        </a>
- 
-                        <a href="https://potimaker-ifrn.github.io/sitePotimaker/index.html" class="footer-link" id="site">
-                            <img src="imagens\LogoPM(branca).png" alt="Site do Potimaker" width=40px>
-                        </a>
-                    </div>
+  <!--Rodapé-->
+    <footer>
+        <div id="footer_content">
+            <div id="footer_contacts">
+                <h1><img src="imagens/logo.png"  width="190" height="auto" alt="logo do quiz"></h1>
+                <p class="redes">Conheça melhor o Potimaker:</p>
+
+                <div id= "footer_social_media">
+                    <a href="https://www.instagram.com/potimaker.ifrn/" class="footer-link" id="instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="https://www.youtube.com/@potimakerifrn" class="footer-link" id="youtube">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+
+                    <a href="https://potimaker-ifrn.github.io/sitePotimaker/index.html" class="footer-link" id="site">
+                        <img src="imagens\LogoPM(branca).png" alt="Site do Potimaker" width=40px>
+                    </a>
                 </div>
- 
-                <ul class="footer-list">
-                    <li>
-                        <h3>Desenvolvido por</h3>
-                    </li>
-                    <li>
-                        <a href="mailto:brito.beatriz@escolar.ifrn.edu.br" class="footer-link" target="blank">Emilly Beatriz</a>
-                    </li>
-                    <li>
-                        <a href="mailto:flavia.macena@escolar.ifrn.edu.br" class="footer-link" target="blank">Flavia Jamily</a>
-                    </li>
-                    <li>
-                        <a href="mailto:isabel.natalia@escolar.ifrn.edu.br" class="footer-link" target="blank">Isabel Natalia</a>
-                    </li>
-                    <li>
-                        <a href="mailto:matias.rosendo@escolar.ifrn.edu.br" class="footer-link" target="blank">Letícia Matias</a>
-                    </li>
-                    <li>
-                        <a href="mailto:lima.sarah@escolar.ifrn.edu.br" class="footer-link" target="blank">Sarah Lima</a>
-                    </li>
-                </ul>
- 
-                <ul class="footer-list">
-                    <li>
-                        <h3>Ficha técnica</h3>
-                    </li>
-                    <li>
-                        <p>Trabalho realizado para a disciplina de programação para internet</p>
-                    </li>
-                    <li>
-                        <p>Professor: Bruno Gomes</p>
-                    </li>
-                    <li>
-                        <p>IFRN- Campus Canguaretama</p>
-                    </li>
-                </ul>
             </div>
-        </footer>
+
+            <ul class="footer-list">
+                <li>
+                    <h3>Desenvolvido por</h3>
+                </li>
+                <li>
+                    <a href="mailto:brito.beatriz@escolar.ifrn.edu.br" class="footer-link" target="blank">Emilly Beatriz</a>
+                </li>
+                <li>
+                    <a href="mailto:flavia.macena@escolar.ifrn.edu.br" class="footer-link" target="blank">Flavia Jamily</a>
+                </li>
+                <li>
+                    <a href="mailto:isabel.natalia@escolar.ifrn.edu.br" class="footer-link" target="blank">Isabel Natalia</a>
+                </li>
+                <li>
+                    <a href="mailto:matias.rosendo@escolar.ifrn.edu.br" class="footer-link" target="blank">Letícia Matias</a>
+                </li>
+                <li>
+                    <a href="mailto:lima.sarah@escolar.ifrn.edu.br" class="footer-link" target="blank">Sarah Lima</a>
+                </li>
+            </ul>
+
+            <ul class="footer-list">
+                <li>
+                    <h3>Ficha técnica</h3>
+                </li>
+                <li>
+                    <p>Trabalho realizado para a disciplina de programação para internet</p>
+                </li>
+                <li>
+                    <p>Professor: Bruno Gomes</p>
+                </li>
+                <li>
+                    <p>IFRN- Campus Canguaretama</p>
+                </li>
+            </ul>
+        </div>
+    </footer>
 
 </body>
 </html>

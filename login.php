@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!--CSS-->
     <link rel="stylesheet" type="text/css" href="potiempresta.css" />
-    <title>Cadastro</title>
+    <title>Login</title>
 
     <style>
       .bd-placeholder-img {
@@ -83,7 +83,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-image: url(imagens/fundo_cad.png);
+    background-image: url(imagens/fundo_log.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -117,6 +117,10 @@
     width: 50%;
     height: 135%;
     border-radius: 0 20px 20px 0;
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .form-box h2{
@@ -155,13 +159,13 @@ form .input-group input{
 }
 
 form .input-group input:focus{
-    border-color: #5EA0C5;
+    border-color: #3598B2;
 }
 
 .criar input[type="submit"]{
     width: 100%;
     height: 47px;
-    background: #5EA0C5;
+    background: #3598B2;
     border-radius: 20px;
     outline: none;
     border: none;
@@ -177,7 +181,7 @@ form .input-group input:focus{
 
 input[type="submit"]:hover {
     background-color: #ffff; 
-    color: #5EA0C5;
+    color: #3598B2;
 }
 
 .login{
@@ -293,30 +297,22 @@ input[type="submit"]:hover {
   <!--Cadastro de usuário-->
   <div class="box">
         <div class="img-box">
-            <img src="imagens/icon_cad.png" width="250px" height="auto" alt="Ícone de cadastro">
+            <img src="imagens/icon_log.png" width="250px" height="auto" alt="Ícone de cadastro">
         </div>
         <div class="form-box">
-        <h2><i class="fa-solid fa-user fa-beat icon"></i>  Crie sua conta</h2>
-        <p>Já possui uma conta ? Faça <a class="login" href="login.php">login</a></p>
+        <h2><i class="fa-solid fa-right-to-bracket fa-beat"></i>  Login</h2>
+        <p>Não possui conta?<a class="login" href="login.php"> Crie</a> uma</p>
             <form action="usuario.php" method="post">
-                <div class="input-group">
-                    <label for="nome">Nome:</label>
-                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
-                </div>
-                <div class="input-group">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" placeholder="Digite seu endereço de email" required>
-                </div>
                 <div class="input-group">
                     <label for="matrícula">Matrícula:</label>
                     <input type="number" id="matrícula" name="matrícula" placeholder="Digite sua matrícula do SUAP" required>
                 </div>
                 <div class="input-group">
                     <label for="senha">Senha:</label>
-                    <input type="password" id="senha" name="senha" placeholder="Escolha uma senha" required>
+                    <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
                 </div>
                 <div class="criar">
-                    <input type="submit" name="criar" value="Criar conta">
+                    <input type="submit" name="criar" value="Logar">
                 </div>
             </form>
         </div>

@@ -282,8 +282,8 @@ input[type="submit"]:hover {
           </form>
 
           <div class="text-end">
-            <button type="button" class="btn btn-light text-dark me-2">Login</button>
-            <button type="button" class="btn conta">Criar conta</button>
+          <a href="login.php" class="btn btn-light text-dark me-2">Login</a>
+          <a href="cadastro.php" class="btn conta">Criar conta</a>
             </div>
           </div>
         </div>

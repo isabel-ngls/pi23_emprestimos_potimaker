@@ -7,8 +7,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <!--Importação da fonte-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Coustard&family=Inter:wght@200;400;600&family=Lexend:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Coustard&family=Inter:wght@200;400;600&family=Lexend:wght@300;400;600&display=swap" rel="stylesheet">
     <!--Ícone da barra do navegador-->
     <link rel="icon" type="image/x-icon" href="imagens/flexicon.png">
     <!--Ícones do footer-->
@@ -77,10 +77,136 @@
       .bd-mode-toggle .dropdown-menu .active .bi {
         display: block !important;
       }
-    </style>
-</head>
-<body>
 
+      /*Cadastro*/
+      body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url(imagens/fundo_cad.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+}
+
+.box{
+    display: flex;
+    margin-top: 50px;
+    padding: 40px;
+}
+
+.img-box{
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 50%;
+    height: 135%;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-radius: 20px  0 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-box{
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(40px);
+    padding: 30px 40px;
+    width: 50%;
+    height: 135%;
+    border-radius: 0 20px 20px 0;
+}
+
+.form-box h2{
+    font-size: 30px;
+    color: #5EA0C5;
+    font-family: 'Lexend', sans-serif;
+}
+
+.form-box form{
+    margin: 20px 0;
+}
+
+form .input-group{
+    margin-bottom: 15px;
+}
+
+form .input-group label{
+    color: #417086;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+form .input-group input{
+    width: 100%;
+    height: 47px;
+    background-color: rgba(255, 255, 255, 0.32);
+    border-radius: 20px;
+    outline: none;
+    border: 2px solid transparent;
+    padding: 15px;
+    font-size: 15px;
+    color: #616161;
+    transition: all 0.4s ease;
+    font-family: 'Inter', sans-serif;
+}
+
+form .input-group input:focus{
+    border-color: #5EA0C5;
+}
+
+.criar input[type="submit"]{
+    width: 100%;
+    height: 47px;
+    background: #5EA0C5;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    margin-top: 15px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Lexend', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+input[type="submit"]:hover {
+    background-color: #ffff; 
+    color: #5EA0C5;
+}
+
+.login{
+  color: #3598B2;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.login:hover{
+  color: #0EBDB8;
+}
+
+@media (max-width:930px){
+    .img-box{
+        display: none;
+    }
+    .box{
+        width: 610px;
+    }
+    .form-box{
+        width: 100%;
+        border-radius: 20px;
+    }
+}
+
+</style>
+</head>
+
+<body>
 <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
   <symbol id="bootstrap" viewBox="0 0 118 94">
     <title>Bootstrap</title>
@@ -123,25 +249,25 @@
                 </a>
               </li>
               <li>
-                <a href="#poti" class="nav-link text-white">
-                <img src="imagens/logoPM(branca).png" width="34px" alt="Logo do Potimaker"><use xlink:href="#poti"/></svg>
+                <a href="#" class="nav-link text-white">
+                <img src="imagens/logoPM(branca).png" width="34px" alt="Logo do Potimaker"><use xlink:href="#speedometer2"/></svg>
                   O Potimaker
                 </a>
               </li>
               <li>
-                <a href="#quemsomos" class="nav-link text-white">
+                <a href="#" class="nav-link text-white">
                 <i class="fa-solid fa-people-group group"></i><use xlink:href="#table"/>
                   Quem somos
                 </a>
               </li>
               <li>
-                <a href="#funcionamento" class="nav-link text-white">
+                <a href="#" class="nav-link text-white">
                   <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#grid"/></svg>
-                  Como funciona
+                  Apostilas
                 </a>
               </li>
               <li>
-                <a href="#administração" class="nav-link text-white">
+                <a href="#" class="nav-link text-white">
                   <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#people-circle"/></svg>
                   Administração
                 </a>
@@ -165,77 +291,38 @@
       </div>
   </header>
 
-  <div class="content">
-  <section class="page1">
-    <div class="home">
-        <div class="div1">
-            <div class="texto"><h1>Aqui o <br>conhecimento se <br>encontra e se <br>compartilha</h1></div>
-            <img class="comp" src="imagens/icon_comp.png" alt="Ícone de computador" width="650px">
-                <div class="botao">
-                    <a href="#quemsomos">Nos conheça</a>
+  <!--Cadastro de usuário-->
+  <div class="box">
+        <div class="img-box">
+            <img src="imagens/icon_cad.png" width="250px" height="auto" alt="Ícone de cadastro">
+        </div>
+        <div class="form-box">
+        <h2><i class="fa-solid fa-user fa-beat icon"></i>  Crie sua conta</h2>
+        <p>Já possui uma conta ? Faça <a class="login" href="login.php">login</a></p>
+            <form action="usuario.php" method="post">
+                <div class="input-group">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
                 </div>
+                <div class="input-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Digite seu endereço de email" required>
+                </div>
+                <div class="input-group">
+                    <label for="matrícula">Matrícula:</label>
+                    <input type="number" id="matrícula" name="matrícula" placeholder="Digite sua matrícula do SUAP" required>
+                </div>
+                <div class="input-group">
+                    <label for="senha">Senha:</label>
+                    <input type="password" id="senha" name="senha" placeholder="Escolha uma senha" required>
+                </div>
+                <div class="criar">
+                    <input type="submit" name="criar" value="Criar conta">
+                </div>
+            </form>
         </div>
     </div>
-    <div class="center">
-        <img src="imagens/seta.png" alt="Ícone de seta para baixo" width="100px">
-    </div>
-    </div>
-    </section>
 
-    <section class="page2" id="poti">
-      <div class="poti">
-      <h2>O Potimaker</h2>
-      <p class="cont">Lorem ipsum dolor sit amet, <br>consectetur adipiscing elit. <br> Curabitur justo purus, pharetra <br>
-       sit amet ultricies sit amet, rutrum et nunc. <br>Suspendisse vel feugiat odio, sed finibus leo</p>
-
-       <div class="Potimaker">
-        <!--Arrumar depois<img src="imagens/pm1.png" alt="Imagem do FabLab Potimaker" width="450px">-->
-        </div> 
-       </div>
-    </section>
-
-    <section class="page3" id="quemsomos">
-      <h2>Quem somos</h2>
-      <p>Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit. <br>
-       Curabitur justo purus, pharetra <br>sit amet ultricies sit amet, <br>rutrum et nunc. Suspendisse <br>
-       vel feugiat odio, sed finibus leo</p>
-       <div class="icon">
-          <!--<img src="imagens/icon2.png" alt="Ícone de livro com prancheta" width="575px">-->
-       </div>
-    </section>
-
-    <section class="page4"id="funcionamento" >
-      <h2>Como funciona</h2>
-      <div class="dividir">
-        <div class="box sec1">
-          <img src="imagens/cadastro.png" alt="Ícone de cadastro" width="375px">
-          <h4>Cadastro</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-          <img class="seta" src="imagens/seta.png" alt="Ícone de seta para baixo" width="100px">
-        </div>
-        <div class="box sec2">
-          <img src="imagens/livro.png" alt="Ícone de livro" width="375px">
-          <h4>Escolha da apostila</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-          <img src="imagens/seta.png" alt="Ícone de seta para baixo" width="100px">
-        </div>
-        <div class="box sec3">
-          <img src="imagens/prazo.png" alt="Ícone de calendário" width="375px">
-          <h4>Prazo</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-          <img src="imagens/seta.png" alt="Ícone de seta para baixo" width="100px">
-        </div>
-      </div>
-    </section>
-
-    <section class="page5" >
-        <img src="imagens/icon3.png" alt="Ícone de pessoa com livros" width="300px">
-        <h1>“A busca pelo conhecimento é a <br>mais nobre das buscas" </h1>
-        <p>- Leonardo da Vinci</p>
-    </section>
-
-
-    
   <div class="espaço"></div>
       <!--Rodapé-->
         <footer>

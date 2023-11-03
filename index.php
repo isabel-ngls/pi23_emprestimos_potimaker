@@ -183,25 +183,27 @@
     </section>
 
     <section class="page2" id="poti">
-      <div class="poti">
-      <h2>O Potimaker</h2>
-      <p class="cont">Lorem ipsum dolor sit amet, <br>consectetur adipiscing elit. <br> Curabitur justo purus, pharetra <br>
-       sit amet ultricies sit amet, rutrum et nunc. <br>Suspendisse vel feugiat odio, sed finibus leo</p>
-
-       <div class="Potimaker">
-        <!--Arrumar depois<img src="imagens/pm1.png" alt="Imagem do FabLab Potimaker" width="450px">-->
-        </div> 
-       </div>
+      <div class="potimaker">
+        <img src="imagens/pm1.png" alt="Imagem do FabLab Potimaker" width="475px">
+      </div> 
+      <div class="somos">
+          <h2>O Potimaker</h2>
+          <p>Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit. <br>
+          Curabitur justo purus, pharetra <br>sit amet ultricies sit amet, <br>rutrum et nunc. Suspendisse <br>
+          vel feugiat odio, sed finibus leo</p>
+      </div>
     </section>
 
     <section class="page3" id="quemsomos">
+        <div class="icon">
+          <img src="imagens/icon2.png" alt="Ícone de livro com prancheta" width="580px">
+       </div>
+      <div class="somos">
       <h2>Quem somos</h2>
       <p>Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit. <br>
        Curabitur justo purus, pharetra <br>sit amet ultricies sit amet, <br>rutrum et nunc. Suspendisse <br>
        vel feugiat odio, sed finibus leo</p>
-       <div class="icon">
-          <!--<img src="imagens/icon2.png" alt="Ícone de livro com prancheta" width="575px">-->
-       </div>
+      </div>
     </section>
 
     <section class="page4"id="funcionamento" >

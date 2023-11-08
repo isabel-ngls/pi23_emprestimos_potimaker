@@ -346,7 +346,7 @@ footer{
 .dividir {
     display: flex; 
     margin-top: 20px;
-    flex-wrap: wrap; /* Permite que os boxes se ajustem em telas menores */
+    flex-wrap: wrap; 
 }
 
 .box {
@@ -500,3 +500,92 @@ footer{
             padding-top: 1350px;
         }
 }
+
+.secao4 {
+    width: 100%;
+  }
+  
+  .secao4-div {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    justify-content: center; /* Centralize os elementos horizontalmente */
+  }
+  
+  .secao4-div h3 {
+    padding: 10px 0px 0px 0px !important;
+  }
+  
+  .secao4-div img {
+    max-width: 100%; /* Faça com que as imagens se ajustem ao tamanho da tela */
+    height: auto;
+  }
+  
+  /* Ajuste a largura dos cards para exibir 2 por linha */
+  .secao4-div-1,
+  .secao4-div-2,
+  .secao4-div-3 {
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+    box-shadow: 2px 2px 16px 0px rgb(0 0 0 / 10%);
+    border-radius: 15px;
+    background-color: rgb(208, 236, 252);
+    transition: all 0.5s ease;
+    z-index: 0;
+  }
+  
+  .secao4-div-1:hover,
+  .secao4-div-2:hover,
+  .secao4-div-3:hover {
+    transform: scale(1.1);
+    z-index: 1;
+  }
+  
+  .apostila {
+    font-family: 'Coustard', sans-serif;
+    color: #5EA0C5;
+  }
+
+  .bt{
+    background-color: #5eb2c5;
+    display: inline-block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 25px;
+    padding-left: 25px;
+    position: static;
+    text-align: justify;
+    border-radius: 50px;
+    font-size: 12px;
+    box-shadow: 10px 5px 5px #315754;
+    transition: all 0.4s ease;
+}
+
+.bt a{
+    color: #ffff;
+    text-decoration: none;
+    transition: 0.3s;
+    font-family: 'Lexend', sans-serif;
+}
+
+.bt a:hover{
+    color: #5eb2c5;
+}
+
+.bt:hover{
+    background-color: #f5f5f5;
+    color: #5eb2c5;
+}
+  
+  /* Media queries para ajustar o número de cards exibidos em diferentes tamanhos de tela */
+  @media screen and (max-width: 768px) {
+    .secao4-div-1,
+    .secao4-div-2,
+    .secao4-div-3 {
+      width: calc(50% - 20px); /* Exiba 2 cards por linha */
+    }
+  }
+  

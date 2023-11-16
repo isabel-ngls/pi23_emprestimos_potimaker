@@ -302,6 +302,8 @@ input[type="submit"]:hover {
         <div class="form-box">
         <h2><i class="fa-solid fa-right-to-bracket fa-beat"></i>  Login</h2>
         <p>Não possui conta?<a class="login" href="cadastro.php"> Crie</a> uma</p>
+
+        
             <form action="usuario.php" method="post">
                 <div class="input-group">
                     <label for="matrícula">Matrícula:</label>
@@ -315,6 +317,8 @@ input[type="submit"]:hover {
                     <input type="submit" name="criar" value="Logar">
                 </div>
             </form>
+
+
         </div>
     </div>
 

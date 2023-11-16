@@ -298,7 +298,7 @@ input[type="submit"]:hover {
         <div class="form-box">
         <h2><i class="fa-solid fa-user fa-beat icon"></i>  Crie sua conta</h2>
         <p>Já possui uma conta ? Faça <a class="login" href="login.php">login</a></p>
-            <form action="usuario.php" method="post">
+            <form action="usuarios.php" method="post">
                 <div class="input-group">
                     <label for="nome">Nome:</label>
                     <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
@@ -309,7 +309,7 @@ input[type="submit"]:hover {
                 </div>
                 <div class="input-group">
                     <label for="matrícula">Matrícula:</label>
-                    <input type="number" id="matrícula" name="matrícula" placeholder="Digite sua matrícula do SUAP" required>
+                    <input type="number" id="matricula" name="matricula" placeholder="Digite sua matrícula do SUAP" required>
                 </div>
                 <div class="input-group">
                     <label for="senha">Senha:</label>

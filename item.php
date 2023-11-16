@@ -78,9 +78,60 @@
         display: block !important;
       }
 
-      body{
-        background-color: #BEDCEF;
-      }
+      body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #DEF2FF;
+}
+
+.product-container {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #E5EEF8;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-container img {
+    max-width: 100%;
+    border-radius: 4px;
+}
+
+.product-details {
+    margin-top: 20px;
+}
+
+.product-details h1 {
+    font-size: 30px;
+}
+
+.unidade {
+    font-size: 18px;
+    color: #e44d26;
+    margin-bottom: 10px;
+}
+
+.product-details p {
+    color: #417086;
+}
+
+.buy-button {
+    background-color: #3598B2;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-family: 'Lexend', sans-serif;
+}
+
+.buy-button:hover {
+    background-color: #78D5E1;
+}
     </style>
 </head>
 <body>
@@ -169,105 +220,17 @@
       </div>
   </header>
 
-      <!-- Apostilas -->
-<section class="secao4" id="sobre">
-    <div class="secao4-div">
-        <div class="secao4-div-1">
-            <div class="secao4-div-1-coluna">
-                <img src="imagens/livro1.png" width="250px" alt="Ícone de livro">
-                <h5 class="apostila">Apostila</h5>
-                <div class="bt">
-                    <a href="item.php">Ver detalhes</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="secao4-div-2">
-            <div class="secao4-div-2-coluna">
-                <img src="imagens\livro2.png"  width="250px" alt="Ícone de livro">
-                <h5 class="apostila">Apostila</h5>
-                <div class="bt">
-                    <a href="item.php">Ver detalhes</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="secao4-div-3">
-            <div class="secao4-div-3-coluna">
-                <img src="imagens/livro1.png" width="250px" alt="Ícone de livro">
-                <h5 class="apostila">Apostila</h5>
-                <div class="bt">
-                    <a href="item.php">Ver detalhes</a>
-                </div>
-            </div>
+      <div class="product-container">
+        <img src="imagens/livro1.png" alt="Ícone de apostila" ">
+        <div class="product-details">
+            <h1 class="titulo">Apostila</h1>
+            <p class="unidade">2 unidades disponíveis</p>
+            <p>Descrição da apostila lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <button class="buy-button">Pegar emprestado</button>
         </div>
     </div>
 
-    <div class="secao4-div">
-        <div class="secao4-div-1">
-            <div class="secao4-div-1-coluna">
-                <img src="imagens\livro2.png"  width="250px" alt="Ícone de livro">
-                <h5 class="apostila">Apostila</h5>
-                <div class="bt">
-                    <a href="item.php">Ver detalhes</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="secao4-div-2">
-            <div class="secao4-div-2-coluna">
-                <img src="imagens/livro1.png" width="250px" alt="Ícone de livro">
-                <h5 class="apostila">Apostila</h5>
-                <div class="bt">
-                    <a href="item.php">Ver detalhes</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="secao4-div-3">
-            <div class="secao4-div-3-coluna">
-                <img src="imagens/livro2.png" width="250" alt="Ícone de livro">
-                <h5 class="apostila">Apostila</h5>
-                <div class="bt">
-                    <a href="item.php">Ver detalhes</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="secao4-div">
-        <div class="secao4-div-1">
-            <div class="secao4-div-1-coluna">
-                <img src="imagens/livro1.png" width="250" alt="Ícone de livro">
-                <h5 class="apostila">Apostila</h5>
-                <div class="bt">
-                    <a href="item.php">Ver detalhes</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="secao4-div-2">
-            <div class="secao4-div-2-coluna">
-                <img src="imagens\livro2.png"  width="250px" alt="Ícone de livro">
-                <h5 class="apostila">Apostila</h5>
-                <div class="bt">
-                    <a href="item.php">Ver detalhes</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="secao4-div-3">
-            <div class="secao4-div-3-coluna">
-                <img src="imagens/livro1.png" width="250" alt="Ícone de livro">
-                <h5 class="apostila">Apostila</h5>
-                <div class="bt">
-                    <a href="item.php">Ver detalhes</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-  <div class="espaço"></div>
+  
   
       <!--Rodapé-->
         <footer>
@@ -328,5 +291,6 @@
                 </ul>
             </div>
         </footer>
+
 </body>
 </html>

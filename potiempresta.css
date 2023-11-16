@@ -511,7 +511,7 @@ footer{
     width: 100%;
     padding: 10px;
     text-align: center;
-    justify-content: center; /* Centralize os elementos horizontalmente */
+    justify-content: center; 
   }
   
   .secao4-div h3 {
@@ -519,7 +519,7 @@ footer{
   }
   
   .secao4-div img {
-    max-width: 100%; /* Faça com que as imagens se ajustem ao tamanho da tela */
+    max-width: 100%; 
     height: auto;
   }
   
@@ -589,3 +589,8 @@ footer{
     }
   }
   
+
+  .titulo{
+    font-family: 'Coustard', sans-serif;
+    color: #5EA0C5;
+  }

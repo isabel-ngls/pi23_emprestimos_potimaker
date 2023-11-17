@@ -1,5 +1,5 @@
 <?php
-
+// PARA O FRONT: não precisa de html e css nessa página. Ela é apenas programação, não aparece para o user
   $db_host = "localhost:3306";
   $db_name = "bd_potimaker";
   $db_user = "root";
@@ -18,4 +18,5 @@
 
   //os dados pego pelo fetchAll são armazenados na variavel $dados
   print_r($dados);//não imprimir, dados sensiveis.
+
 ?>

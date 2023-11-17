@@ -1,3 +1,16 @@
+<?php
+if(isset($_GET['erro'])){
+
+    echo $_GET['erro'];
+}
+if(isset($_GET['alerta'])){
+
+  echo $_GET['alerta'];
+}
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -304,7 +317,7 @@ input[type="submit"]:hover {
         <p>Não possui conta?<a class="login" href="cadastro.php"> Crie</a> uma</p>
 
         
-            <form action="usuario.php" method="post">
+            <form action="usuario_login.php" method="post">
                 <div class="input-group">
                     <label for="matrícula">Matrícula:</label>
                     <input type="number" id="matrícula" name="matrícula" placeholder="Digite sua matrícula do SUAP" required>

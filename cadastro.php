@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -298,7 +299,10 @@ input[type="submit"]:hover {
         <div class="form-box">
         <h2><i class="fa-solid fa-user fa-beat icon"></i>  Crie sua conta</h2>
         <p>Já possui uma conta ? Faça <a class="login" href="login.php">login</a></p>
-            <form action="usuarios.php" method="post">
+
+        <!--formulário--> 
+
+            <form action="usuario_cadastro.php" method="post">
                 <div class="input-group">
                     <label for="nome">Nome:</label>
                     <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>

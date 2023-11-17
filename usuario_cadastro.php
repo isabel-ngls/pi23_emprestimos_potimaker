@@ -1,4 +1,7 @@
+
+
 <?php
+// PARA O FRONT: não precisa de html e css nessa página. Ela é apenas programação, não aparece para io user
 require 'config.php';
 
 if(isset($_POST['criar'])){
@@ -9,15 +12,16 @@ if(isset($_POST['criar'])){
   $email = filter_input(INPUT_POST,'email');
   $senha = filter_input(INPUT_POST,'senha');
 
-//verifica se ja existe uma matricula especifica no bd, se existir, mantem na pagina de cadastro, caso 
-//contrario ouser vai para pagina de apostilas
+// AUTENTICAÇÂO
+//verifica se ja existe uma matricula especifica no bd, se existir, manda para página de login, caso 
+//contrario o user vai para pagina de apostilas
         $sql = $pdo-> prepare(" SELECT matricula FROM usuario WHERE matricula='$matricula' ");
       //executa
       $sql->execute();
       $linhas= $sql-> rowCount();
 
       if($linhas >=1){
-         header("Location:cadastro.php"); 
+         header("Location:login.php?alerta=Essa conta já está cadastrada, realize login"); 
          
 
       }else {
@@ -33,7 +37,7 @@ if(isset($_POST['criar'])){
       header("Location:apostilas.php");      
       }
           
-
       exit;}
+      
    
 ?>

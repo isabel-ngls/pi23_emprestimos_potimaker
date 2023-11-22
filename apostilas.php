@@ -273,7 +273,7 @@
         <footer>
             <div id="footer_content">
                 <div id="footer_contacts">
-                    <h1><img src="imagens/logo.png"  width="190" height="auto" alt="logo do quiz"></h1>
+                    <h1><img src="src/imagens/logo.png"  width="190" height="auto" alt="logo do PotiEmpresta"></h1>
                     <p class="redes">Conheça melhor o Potimaker:</p>
  
                     <div id= "footer_social_media">

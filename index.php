@@ -114,7 +114,7 @@
         <div class="container">
           <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
             <a href="/" class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
-              <img src="imagens/logobranca.png" alt="Logo do PotiEmpresta" width= "200px">
+              <img src="src/imagens/logobranca.png" alt="Logo do PotiEmpresta" width= "200px">
             </a>
 
             <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
@@ -126,7 +126,7 @@
               </li>
               <li>
                 <a href="#poti" class="nav-link text-white">
-                <img src="imagens/logoPM(branca).png" width="34px" alt="Logo do Potimaker"><use xlink:href="#poti"/></svg>
+                <img src="src/imagens/logoPM(branca).png" width="34px" alt="Logo do Potimaker"><use xlink:href="#poti"/></svg>
                   O Potimaker
                 </a>
               </li>
@@ -172,21 +172,21 @@
     <div class="home">
         <div class="div1">
             <div class="texto"><h1>Aqui o <br>conhecimento se <br>encontra e se <br>compartilha</h1></div>
-            <img class="comp" src="imagens/icon_comp.png" alt="Ícone de computador" width="650px">
+            <img class="comp" src="src/imagens/icon_comp.png" alt="Ícone de computador" width="650px">
                 <div class="botao">
                     <a href="#quemsomos">Nos conheça</a>
                 </div>
         </div>
     </div>
     <div class="center">
-        <img src="imagens/seta.png" alt="Ícone de seta para baixo" width="100px">
+        <img src="src/imagens/seta.png" alt="Ícone de seta para baixo" width="100px">
     </div>
     </div>
     </section>
 
     <section class="page2" id="poti">
       <div class="potimaker">
-        <img src="imagens/pm1.png" alt="Imagem do FabLab Potimaker" width="475px">
+        <img src="src/imagens/pm1.png" alt="Imagem do FabLab Potimaker" width="475px">
       </div> 
       <div class="somos">
           <h2>O Potimaker</h2>
@@ -198,7 +198,7 @@
 
     <section class="page3" id="quemsomos">
         <div class="icon">
-          <img src="imagens/icon2.png" alt="Ícone de livro com prancheta" width="580px">
+          <img src="src/imagens/icon2.png" alt="Ícone de livro com prancheta" width="580px">
        </div>
       <div class="somos">
       <h2>Quem somos</h2>
@@ -212,28 +212,28 @@
       <h2>Como funciona</h2>
       <div class="dividir">
         <div class="box sec1">
-          <img src="imagens/cadastro.png" alt="Ícone de cadastro" width="375px">
+          <img src="src/imagens/cadastro.png" alt="Ícone de cadastro" width="375px">
           <h4>Cadastro</h4>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-          <img class="seta" src="imagens/seta.png" alt="Ícone de seta para baixo" width="100px">
+          <img class="seta" src="src/imagens/seta.png" alt="Ícone de seta para baixo" width="100px">
         </div>
         <div class="box sec2">
-          <img src="imagens/livro.png" alt="Ícone de livro" width="375px">
+          <img src="src/imagens/livro.png" alt="Ícone de livro" width="375px">
           <h4>Escolha da apostila</h4>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-          <img src="imagens/seta.png" alt="Ícone de seta para baixo" width="100px">
+          <img src="src/imagens/seta.png" alt="Ícone de seta para baixo" width="100px">
         </div>
         <div class="box sec3">
-          <img src="imagens/prazo.png" alt="Ícone de calendário" width="375px">
+          <img src="src/imagens/prazo.png" alt="Ícone de calendário" width="375px">
           <h4>Prazo</h4>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-          <img src="imagens/seta.png" alt="Ícone de seta para baixo" width="100px">
+          <img src="src/imagens/seta.png" alt="Ícone de seta para baixo" width="100px">
         </div>
       </div>
     </section>
 
     <section class="page5" >
-        <img src="imagens/icon3.png" alt="Ícone de pessoa com livros" width="300px">
+        <img src="src/imagens/icon3.png" alt="Ícone de pessoa com livros" width="300px">
         <h1>“A busca pelo conhecimento é a <br>mais nobre das buscas" </h1>
         <p>- Autor desconhecido</p>
     </section>
@@ -244,7 +244,7 @@
         <footer>
             <div id="footer_content">
                 <div id="footer_contacts">
-                    <h1><img src="imagens/logo.png"  width="190" height="auto" alt="logo do quiz"></h1>
+                    <h1><img src="src/imagens/logo.png"  width="190" height="auto" alt="logo do quiz"></h1>
                     <p class="redes">Conheça melhor o Potimaker:</p>
  
                     <div id= "footer_social_media">
@@ -257,7 +257,7 @@
                         </a>
  
                         <a href="https://potimaker-ifrn.github.io/sitePotimaker/index.html" class="footer-link" id="site">
-                            <img src="imagens\LogoPM(branca).png" alt="Site do Potimaker" width=40px>
+                            <img src="src/imagens/LogoPM(branca).png" alt="Site do Potimaker" width=40px>
                         </a>
                     </div>
                 </div>

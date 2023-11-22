@@ -12,11 +12,11 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Coustard&family=Inter:wght@200;400;600&family=Lexend:wght@300;400;600&display=swap" rel="stylesheet">
     <!--Ícone da barra do navegador-->
-    <link rel="icon" type="image/x-icon" href="imagens/flexicon.png">
+    <link rel="icon" type="image/x-icon" href="src/imagens/flexicon.png">
     <!--Ícones do footer-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!--CSS-->
-    <link rel="stylesheet" type="text/css" href="potiempresta.css" />
+    <link rel="stylesheet" type="text/css" href="src/css/potiempresta.css" />
     <title>PotiEmpresta</title>
 
     <style>

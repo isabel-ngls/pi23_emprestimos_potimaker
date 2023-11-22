@@ -15,7 +15,7 @@
     <!--Ícones do footer-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!--CSS-->
-    <link rel="stylesheet" type="text/css" href="potiempresta.css" />
+    <link rel="stylesheet" type="text/css" href="src/css/potiempresta.css" />
     <title>Cadastro</title>
 
     <style>
@@ -238,7 +238,7 @@ input[type="submit"]:hover {
         <div class="container">
           <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
             <a href="/" class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
-              <img src="imagens/logobranca.png" alt="Logo do PotiEmpresta" width= "200px">
+              <img src="src/imagens/logobranca.png" alt="Logo do PotiEmpresta" width= "200px">
             </a>
 
             <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
@@ -250,7 +250,7 @@ input[type="submit"]:hover {
               </li>
               <li>
                 <a href="index.php" class="nav-link text-white">
-                <img src="imagens/logoPM(branca).png" width="34px" alt="Logo do Potimaker"><use xlink:href="#poti"/></svg>
+                <img src="src/imagens/logoPM(branca).png" width="34px" alt="Logo do Potimaker"><use xlink:href="#poti"/></svg>
                   O Potimaker
                 </a>
               </li>
@@ -294,7 +294,7 @@ input[type="submit"]:hover {
   <!--Cadastro de usuário-->
   <div class="box">
         <div class="img-box">
-            <img src="imagens/icon_cad.png" width="250px" height="auto" alt="Ícone de cadastro">
+            <img src="src/imagens/icon_cad.png" width="250px" height="auto" alt="Ícone de cadastro">
         </div>
         <div class="form-box">
         <h2><i class="fa-solid fa-user fa-beat icon"></i>  Crie sua conta</h2>
@@ -331,7 +331,7 @@ input[type="submit"]:hover {
         <footer>
             <div id="footer_content">
                 <div id="footer_contacts">
-                    <h1><img src="imagens/logo.png"  width="190" height="auto" alt="logo do quiz"></h1>
+                    <h1><img src="src/imagens/logo.png"  width="190" height="auto" alt="logo do quiz"></h1>
                     <p class="redes">Conheça melhor o Potimaker:</p>
  
                     <div id= "footer_social_media">
@@ -344,7 +344,7 @@ input[type="submit"]:hover {
                         </a>
  
                         <a href="https://potimaker-ifrn.github.io/sitePotimaker/index.html" class="footer-link" id="site">
-                            <img src="imagens\LogoPM(branca).png" alt="Site do Potimaker" width=40px>
+                            <img src="src/imagens\LogoPM(branca).png" alt="Site do Potimaker" width=40px>
                         </a>
                     </div>
                 </div>

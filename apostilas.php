@@ -10,11 +10,11 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Coustard&family=Inter:wght@200;400;600&family=Lexend:wght@300;400;600&display=swap" rel="stylesheet">
     <!--Ícone da barra do navegador-->
-    <link rel="icon" type="image/x-icon" href="imagens/flexicon.png">
+    <link rel="icon" type="image/x-icon" href="src/imagens/flexicon.png">
     <!--Ícones do footer-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!--CSS-->
-    <link rel="stylesheet" type="text/css" href="potiempresta.css" />
+    <link rel="stylesheet" type="text/css" href="src/css/potiempresta.css" />
     <title>PotiEmpresta</title>
 
     <style>
@@ -116,7 +116,7 @@
         <div class="container">
           <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
             <a href="/" class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
-              <img src="imagens/logobranca.png" alt="Logo do PotiEmpresta" width= "200px">
+              <img src="src/imagens/logobranca.png" alt="Logo do PotiEmpresta" width= "200px">
             </a>
 
             <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
@@ -128,7 +128,7 @@
               </li>
               <li>
                 <a href="#poti" class="nav-link text-white">
-                <img src="imagens/logoPM(branca).png" width="34px" alt="Logo do Potimaker"><use xlink:href="#poti"/></svg>
+                <img src="src/imagens/logoPM(branca).png" width="34px" alt="Logo do Potimaker"><use xlink:href="#poti"/></svg>
                   O Potimaker
                 </a>
               </li>
@@ -174,7 +174,7 @@
     <div class="secao4-div">
         <div class="secao4-div-1">
             <div class="secao4-div-1-coluna">
-                <img src="imagens/livro1.png" width="250px" alt="Ícone de livro">
+                <img src="src/imagens/livro1.png" width="250px" alt="Ícone de livro">
                 <h5 class="apostila">Apostila</h5>
                 <div class="bt">
                     <a href="item.php">Ver detalhes</a>
@@ -184,7 +184,7 @@
 
         <div class="secao4-div-2">
             <div class="secao4-div-2-coluna">
-                <img src="imagens\livro2.png"  width="250px" alt="Ícone de livro">
+                <img src="src/imagens/livro2.png"  width="250px" alt="Ícone de livro">
                 <h5 class="apostila">Apostila</h5>
                 <div class="bt">
                     <a href="item.php">Ver detalhes</a>
@@ -194,7 +194,7 @@
 
         <div class="secao4-div-3">
             <div class="secao4-div-3-coluna">
-                <img src="imagens/livro1.png" width="250px" alt="Ícone de livro">
+                <img src="src/imagens/livro1.png" width="250px" alt="Ícone de livro">
                 <h5 class="apostila">Apostila</h5>
                 <div class="bt">
                     <a href="item.php">Ver detalhes</a>
@@ -206,7 +206,7 @@
     <div class="secao4-div">
         <div class="secao4-div-1">
             <div class="secao4-div-1-coluna">
-                <img src="imagens\livro2.png"  width="250px" alt="Ícone de livro">
+                <img src="src/imagens/livro2.png"  width="250px" alt="Ícone de livro">
                 <h5 class="apostila">Apostila</h5>
                 <div class="bt">
                     <a href="item.php">Ver detalhes</a>
@@ -216,7 +216,7 @@
 
         <div class="secao4-div-2">
             <div class="secao4-div-2-coluna">
-                <img src="imagens/livro1.png" width="250px" alt="Ícone de livro">
+                <img src="src/imagens/livro1.png" width="250px" alt="Ícone de livro">
                 <h5 class="apostila">Apostila</h5>
                 <div class="bt">
                     <a href="item.php">Ver detalhes</a>
@@ -226,7 +226,7 @@
 
         <div class="secao4-div-3">
             <div class="secao4-div-3-coluna">
-                <img src="imagens/livro2.png" width="250" alt="Ícone de livro">
+                <img src="src/imagens/livro2.png" width="250" alt="Ícone de livro">
                 <h5 class="apostila">Apostila</h5>
                 <div class="bt">
                     <a href="item.php">Ver detalhes</a>
@@ -238,7 +238,7 @@
     <div class="secao4-div">
         <div class="secao4-div-1">
             <div class="secao4-div-1-coluna">
-                <img src="imagens/livro1.png" width="250" alt="Ícone de livro">
+                <img src="src/imagens/livro1.png" width="250" alt="Ícone de livro">
                 <h5 class="apostila">Apostila</h5>
                 <div class="bt">
                     <a href="item.php">Ver detalhes</a>
@@ -248,7 +248,7 @@
 
         <div class="secao4-div-2">
             <div class="secao4-div-2-coluna">
-                <img src="imagens\livro2.png"  width="250px" alt="Ícone de livro">
+                <img src="src/imagens/livro2.png"  width="250px" alt="Ícone de livro">
                 <h5 class="apostila">Apostila</h5>
                 <div class="bt">
                     <a href="item.php">Ver detalhes</a>
@@ -258,7 +258,7 @@
 
         <div class="secao4-div-3">
             <div class="secao4-div-3-coluna">
-                <img src="imagens/livro1.png" width="250" alt="Ícone de livro">
+                <img src="src/imagens/livro1.png" width="250" alt="Ícone de livro">
                 <h5 class="apostila">Apostila</h5>
                 <div class="bt">
                     <a href="item.php">Ver detalhes</a>
@@ -286,7 +286,7 @@
                         </a>
  
                         <a href="https://potimaker-ifrn.github.io/sitePotimaker/index.html" class="footer-link" id="site">
-                            <img src="imagens\LogoPM(branca).png" alt="Site do Potimaker" width=40px>
+                            <img src="src/imagens/LogoPM(branca).png" alt="Site do Potimaker" width=40px>
                         </a>
                     </div>
                 </div>

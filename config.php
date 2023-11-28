@@ -11,6 +11,7 @@
 
   //chama a função query para fazer uma consulta na tabela usuario
   $sql = $pdo -> query('SELECT * FROM usuario');
+  $sql = $pdo -> query('SELECT * FROM apostila');
 
   //fetchALL "pega" os elementos da tabela 
   $dados = $sql->fetchALL(pdo::FETCH_ASSOC);

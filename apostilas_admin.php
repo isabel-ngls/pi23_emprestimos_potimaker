@@ -42,7 +42,10 @@ if(isset($_POST['criar'])){
       }
       foreach ($dados as $key => $value ){
         echo '<br>';
-        echo '<a href=?delete='.$value['isbn'].'">(X)</a>'.$value['isbn'].'| '.$value['nome'].'|'.$value['quantidade'].'|'.$value['descricao'];
+        echo '<a href="?delete=' . $value['isbn'] . '">(X)</a> ';
+        echo '<a href="apostilas_update.php?isbn=' . $value['isbn'] . '">Editar</a> | ';
+        echo $value['isbn'] . ' | ' . $value['nome'] . ' | ' . $value['quantidade'] . ' | ' . $value['descricao'];
+      
       }
    
 ?>

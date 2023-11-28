@@ -1,11 +1,11 @@
 
-<div class="box">
+<div class="box"> 
         <div class="form-box">
         <h2><i class="fa-solid fa-user fa-beat icon"></i>  Cadastre uma Apostila</h2>
 
         <!--formulário--> 
 
-            <form action="apostilas_admin.php" method="post">
+            <form action="apostilas_admin.php" method="post"> <!--falta matricula pq imagino que tenha que ter varias coisas--> 
                 <div class="input-group">
                     <label for="nome">Nome:</label>
                     <input type="text" id="nome" name="nome" placeholder="Digite nome da apostila" required>

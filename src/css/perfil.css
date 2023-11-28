@@ -18,7 +18,7 @@
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
     width: 70%;
     height: 480px;
-    background: #12c2e9;  /* fallback for old browsers */
+    background: #12c2e9; 
     background: -webkit-linear-gradient(to right, #5EA0C5, #8AC5E2, #BAE6F4);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right,  #8AC5E2, #D2F3FD, #CEEFF4 , #6FC1CC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
@@ -128,4 +128,15 @@
   .perfil{
     margin-top: 55px;
     margin-bottom: 50px;
+  }
+
+  a{
+    text-decoration: none;
+    color: #5FB8C6;
+    font-size: 20px;
+  }
+
+  a:hover{
+    color: #80EFEF;
+    margin-left: 30px;
   }

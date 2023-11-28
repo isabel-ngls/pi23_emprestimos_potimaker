@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-<link rel="stylesheet" type="text/css" href="src/css/perfil.css" />
 <?php include 'bases/head.php' ?>
 <title>Meu Perfil</title>
+<link rel="stylesheet" type="text/css" href="src/css/perfil.css" />
 <body>
 
 <?php include 'bases/menu.php' ?>

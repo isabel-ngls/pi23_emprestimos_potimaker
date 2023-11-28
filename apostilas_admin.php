@@ -40,7 +40,7 @@ if(isset($_POST['criar'])){
         $isbn=(int)$_GET['delete'];
         $pdo->exec("DELETE FROM apostila WHERE isbn=$isbn");
       }
-      foreach ($dados as $key => $value ){
+      foreach ($dadosApostila as $key => $value ){
         echo '<br>';
         echo '<a href="?delete=' . $value['isbn'] . '">(X)</a> ';
         echo '<a href="apostilas_update.php?isbn=' . $value['isbn'] . '">Editar</a> | ';

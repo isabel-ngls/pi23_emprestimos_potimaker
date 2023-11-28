@@ -7,7 +7,10 @@ require "config.php";
     $pdo->exec("DELETE FROM usuario WHERE matricula=$matricula");
     echo "deletado";
   }
-  foreach ($dados as $key => $value ){
-    echo '<a href=?delete='.$value['matricula'].'">(X)</a>'.$value['matricula'].'| '.$value['nome'].'|'.$value['email_escolar'].'|'.$value['senha'];
+  foreach ($dadosUsuario as $key => $value ){
+    echo '<br>';
+    echo '<a href="?delete=' . $value['matricula'] . '">(X)</a> ';
+    echo '<a href="usuario_update.php?matricula=' . $value['matricula'] . '">Editar</a> | ';
+    echo $value['matricula'] . ' | ' . $value['nome'] . ' | ' . $value['email_escolar'];
   }
 ?>

@@ -163,6 +163,10 @@ input[type="submit"]:hover {
                     <label for="senha">Senha:</label>
                     <input type="password" id="senha" name="senha" placeholder="Escolha uma senha" required>
                 </div>
+                <div class="input-group">
+                    <label for="codigo">Código de validação</label>
+                    <input type="text" id="codigo" name="codigo" placeholder="Preecha somente se você for administrador">
+                </div>
                 <div class="criar">
                     <input type="submit" name="criar" value="Criar conta">
                 </div>

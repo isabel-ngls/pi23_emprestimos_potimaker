@@ -10,14 +10,25 @@
   $pdo = new PDO("mysql:dbname=".$db_name."; host=".$db_host , $db_user, $db_password);
 
   //chama a função query para fazer uma consulta na tabela usuario
-  $sql = $pdo -> query('SELECT * FROM usuario');
-  $sql = $pdo -> query('SELECT * FROM apostila');
+// Consulta na tabela "usuario"
+  $sqlUsuario = $pdo->query('SELECT * FROM usuario');
+  $dadosUsuario = $sqlUsuario->fetchAll(PDO::FETCH_ASSOC);
 
+  // Consulta na tabela "apostila"
+  $sqlApostila = $pdo->query('SELECT * FROM apostila');
+  $dadosApostila = $sqlApostila->fetchAll(PDO::FETCH_ASSOC);
   //fetchALL "pega" os elementos da tabela 
-  $dados = $sql->fetchALL(pdo::FETCH_ASSOC);
+
   echo('<pre>');//retirar isso
 
   //os dados pego pelo fetchAll são armazenados na variavel $dados
-  print_r($dados);//não imprimir, dados sensiveis.
+  
+// Exibir dados da tabela "usuario"
+  echo "Dados da tabela 'usuario':\n";
+  print_r($dadosUsuario);
+
+  // Exibir dados da tabela "apostila"
+  echo "\nDados da tabela 'apostila':\n";
+  print_r($dadosApostila);//não imprimir, dados sensiveis.
 
 ?>

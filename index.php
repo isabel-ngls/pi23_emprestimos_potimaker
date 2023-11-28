@@ -33,9 +33,12 @@
       </div> 
       <div class="somos">
           <h2>O Potimaker</h2>
-          <p>Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit. <br>
-          Curabitur justo purus, pharetra <br>sit amet ultricies sit amet, <br>rutrum et nunc. Suspendisse <br>
-          vel feugiat odio, sed finibus leo</p>
+          <p> O Laboratório de Prototipagem e Inovação <br>
+          do IFRN-Campus Canguaretama, ou <br>
+          simplesmente Potimaker, é um espaço <br>
+          de colaboração e experimentação onde <br>
+          várias pessoas podem trabalhar juntas <br>
+          para transformar suas ideias em realidade.</p>
       </div>
     </section>
 
@@ -45,9 +48,13 @@
        </div>
       <div class="somos">
       <h2>Quem somos</h2>
-      <p>Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit. <br>
-       Curabitur justo purus, pharetra <br>sit amet ultricies sit amet, <br>rutrum et nunc. Suspendisse <br>
-       vel feugiat odio, sed finibus leo</p>
+      <p>O laboratório Potimaker dispõe de  <br>
+      diversos materiais que podem ser <br>
+      acessados pelas pessoas do campus <br>
+      que se interessarem. Assim, pensando <br>
+      em um melhor e mais eficiente <br>
+      gerenciamento desses recursos, o <br> 
+      PotiEmpresta foi criado.</p>
       </div>
     </section>
 
@@ -57,19 +64,19 @@
         <div class="box sec1">
           <img src="src/imagens/cadastro.png" alt="Ícone de cadastro" width="375px">
           <h4>Cadastro</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+          <p>O processo é simples e rápido. Primeiro você realiza seu cadastro e assim cria sua conta.</p>
           <img class="seta" src="src/imagens/seta.png" alt="Ícone de seta para baixo" width="100px">
         </div>
         <div class="box sec2">
           <img src="src/imagens/livro.png" alt="Ícone de livro" width="375px">
           <h4>Escolha da apostila</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+          <p>Você é redirecionado para a página de exibição das apostilas para poder escolher a que deseja.</p>
           <img src="src/imagens/seta.png" alt="Ícone de seta para baixo" width="100px">
         </div>
         <div class="box sec3">
           <img src="src/imagens/prazo.png" alt="Ícone de calendário" width="375px">
           <h4>Prazo</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+          <p>Agora você tem o prazo de 2 dias para ir até o Potimaker e retirar sua apostila escolhida.</p>
           <img src="src/imagens/seta.png" alt="Ícone de seta para baixo" width="100px">
         </div>
       </div>

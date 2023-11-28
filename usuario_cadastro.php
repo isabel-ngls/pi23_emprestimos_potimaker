@@ -1,7 +1,20 @@
 
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<?php include 'bases/head.php' ?>
+<title>Lista de usuários</title>
+<style>
+  
+</style>
+</head>
+<body>
+
+<?php include 'bases/menu.php' ?>
+
 
 <?php
-// PARA O FRONT: não precisa de html e css nessa página. Ela é apenas programação, não aparece para io user
+
 require 'config.php';
 
 if(isset($_POST['criar'])){
@@ -41,3 +54,8 @@ if(isset($_POST['criar'])){
       
    
 ?>
+
+
+
+</body>
+</html>

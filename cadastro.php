@@ -142,7 +142,7 @@ input[type="submit"]:hover {
             <img src="src/imagens/icon_cad.png" width="250px" height="auto" alt="Ícone de cadastro">
         </div>
         <div class="form-box">
-        <h2><i class="fa-solid fa-user fa-beat icon"></i>  Crie sua conta</h2>
+        <h2> <i class="fa-solid fa-user fa-beat"></i> Crie sua conta</h2>
         <p>Já possui uma conta ? Faça <a class="login" href="login.php">login</a></p>
 
         <!--formulário--> 

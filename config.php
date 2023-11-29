@@ -19,16 +19,16 @@
   $dadosApostila = $sqlApostila->fetchAll(PDO::FETCH_ASSOC);
   //fetchALL "pega" os elementos da tabela 
 
-  echo('<pre>');//retirar isso
+  //echo('<pre>');//retirar isso
 
   //os dados pego pelo fetchAll são armazenados na variavel $dados
   
 // Exibir dados da tabela "usuario"
-  echo "Dados da tabela 'usuario':\n";
-  print_r($dadosUsuario);
+  //echo "Dados da tabela 'usuario':\n";
+  //print_r($dadosUsuario);
 
   // Exibir dados da tabela "apostila"
-  echo "\nDados da tabela 'apostila':\n";
-  print_r($dadosApostila);//não imprimir, dados sensiveis.
+  //echo "\nDados da tabela 'apostila':\n";
+  //print_r($dadosApostila);//não imprimir, dados sensiveis.
 
 ?>

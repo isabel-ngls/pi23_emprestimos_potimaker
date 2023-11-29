@@ -34,7 +34,7 @@ if(isset($_POST['criar'])){
       $linhas= $sql-> rowCount();
 
       if($linhas >=1){
-         header("Location:login.php?alerta=Essa conta já está cadastrada, realize login"); 
+        // header("Location:login.php?alerta=Essa conta já está cadastrada, realize login"); 
          
 
       }else {
@@ -46,8 +46,8 @@ if(isset($_POST['criar'])){
       $sql-> bindValue(':email',$email);
       $sql-> bindValue(':senha',$senha);
 
-      $sql->execute();
-      header("Location:apostilas.php");      
+      //$sql->execute();
+    //  header("Location:apostilas.php");      
       }
           
       exit;}

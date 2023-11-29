@@ -143,7 +143,7 @@ input[type="submit"]:hover {
         <div class="form-box">
         <h2> <i class="fa-solid fa-book fa-beat"></i> Cadastro de Apostilas</h2>
         <!--formulário--> 
-            <form action="usuario_cadastro.php" method="post">
+            <form action="apostilas_admin.php" method="post">
                 <div class="input-group">
                     <label for="nome">Nome:</label>
                     <input type="text" id="nome" name="nome" placeholder="Digite o nome da apostila" required>
@@ -161,7 +161,7 @@ input[type="submit"]:hover {
                     <input type="number" id="isbn" name="isbn" placeholder="Digite o ISBN da apostila (13 dígitos)" required>
                 </div>
                 <div class="criar">
-                    <input type="submit" name="criar" value="Criar conta">
+                    <input type="submit" name="criar" value="Criar">
                 </div>
             </form>
         </div>

@@ -2,6 +2,7 @@
 // PARA O FRONT: não precisa de html e css nessa página. Ela é apenas programação, não aparece para io user
 require 'config.php';
 
+
 if(isset($_POST['criar'])){
 
 
@@ -40,6 +41,20 @@ if(isset($_POST['criar'])){
         $isbn=(int)$_GET['delete'];
         $pdo->exec("DELETE FROM apostila WHERE isbn=$isbn");
       }
+      
+
+   
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+<p><?php foreach ($dadosApostila as $key => $value ){
+      
       foreach ($dadosApostila as $key => $value ){
         echo '<br>';
         echo '<a href="?delete=' . $value['isbn'] . '">(X)</a> ';
@@ -47,5 +62,8 @@ if(isset($_POST['criar'])){
         echo $value['isbn'] . ' | ' . $value['nome'] . ' | ' . $value['quantidade'] . ' | ' . $value['descricao'];
       
       }
-   
-?>
+    
+    }?></p>
+
+</body>
+</html>

@@ -9,8 +9,8 @@ if(isset($_GET['matricula'])){
     $sql->bindValue(':matricula', $matricula);
     $sql->execute();
     $usuario = $sql->fetch(PDO::FETCH_ASSOC);
-
-    if(!$usuario) {
+}
+   /*if(!$usuario) {
         header("Location: usuarios.php?alerta=Usuário não encontrado");
         exit;
     }
@@ -19,7 +19,7 @@ if(isset($_GET['matricula'])){
     header("Location: usuarios.php");
     exit;
 }
-
+*/
 if(isset($_POST['editar'])) {
     // Atualiza os dados do usuário
     $nome = filter_input(INPUT_POST, 'nome');

@@ -13,4 +13,5 @@ require "config.php";
     echo '<a href="usuario_update.php?matricula=' . $value['matricula'] . '">Editar</a> | ';
     echo $value['matricula'] . ' | ' . $value['nome'] . ' | ' . $value['email_escolar'];
   }
+  
 ?>

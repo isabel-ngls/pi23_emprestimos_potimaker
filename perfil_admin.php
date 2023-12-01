@@ -18,7 +18,7 @@
     <p class="centralizar">Email: admim@escolar.com</p>
   </div>
   <div class="right-container">
-  <h3 class="gradienttext">Páginas administrativas</h3>
+  <h3 class="gradienttext tamanho">Páginas administrativas</h3>
   <br>
   <a href="apostilas_cadastro.php"><i class="fa-solid fa-file-circle-plus"></i>  Cadastrar apostilas</a> <br>
   <a href=""><i class="fa-solid fa-list-check"></i>  Gerenciar apostilas</a> <br>

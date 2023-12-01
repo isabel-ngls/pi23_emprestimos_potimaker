@@ -6,6 +6,9 @@ if(isset($_GET['erro'])){
 if(isset($_GET['alerta'])){
 
   echo $_GET['alerta'];
+
+  
+
 }
 
 ?>
@@ -165,7 +168,7 @@ input[type="submit"]:hover {
             <form action="usuario_login.php" method="post">
                 <div class="input-group">
                     <label for="matrícula">Matrícula:</label>
-                    <input type="number" id="matrícula" name="matrícula" placeholder="Digite sua matrícula do SUAP" required>
+                    <input type="number" id="matrícula" name="matricula" placeholder="Digite sua matrícula do SUAP" required>
                 </div>
                 <div class="input-group">
                     <label for="senha">Senha:</label>

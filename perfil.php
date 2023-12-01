@@ -1,3 +1,11 @@
+<?php
+require "config.php";
+session_start();
+
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -12,9 +20,10 @@
     <div class="card">
   <div class="left-container">
     <img src="src/imagens/userr.png" alt="Ícone de estudante">
-    <h2 class="gradienttext">Aluno</h2>
-    <p class="centralizar">Matrícula: 00000000000000</p>
-    <p class="centralizar">Email: aluno@escolar.com</p>
+    <h2 class="gradienttext">Usuário: <br></h2>
+    <h2 class="gradienttext"><?php echo  $_SESSION["matricula"];?></h2>
+   <!-- <p class="centralizar">Matrícula: 00000000000000</p>
+    <p class="centralizar">Email: aluno@escolar.com</p> -->
   </div>
   <div class="right-container">
     <h3 class="gradienttext">Apostilas emprestadas</h3>

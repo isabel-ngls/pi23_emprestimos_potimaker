@@ -1,20 +1,41 @@
-<?php 
-require 'config.php';
+<?php
+include "config.php";
 
-if(isset($_POST['matricula']) && isset($_POST['senha'])){
-    $matricula=$_POST['matricula'];
-    $senha=$_POST['senha'];
+if(isset($_POST['criar'])){
 
-   $slq= "SELECT * FROM usuarios 
-            WHERE matricula='$matricula' AND senha ='$senha' ";
 
-            $res= mysql_query($pdo, $sql);
+    $matricula = filter_input(INPUT_POST,'matricula');
+    $nome  = filter_input(INPUT_POST,'nome');
+    $email = filter_input(INPUT_POST,'email');
+    $senha = filter_input(INPUT_POST,'senha');
 
-            if(mysql_num_rows($res) == 1){
-                header("location:apostilas.php");
- }  }else{
-    header("location:login.php?alerta=Matrícula e/ou senha incorreta(s)");
-    exit();
+    $senha_cripto=md5($senha);
+
+
+$sql = $pdo-> prepare(" SELECT matricula FROM usuario WHERE matricula='$matricula' AND senha='$senha_cripto' ");
+//executa
+$sql->execute();
+$linhas= $sql-> rowCount();
+
+
+if($linhas >=1){
+ 
+  session_start();
+  $_SESSION['matricula'] = $matricula;
+  //$_SESSION['nome'] = $linhas['nome'];
+  header('location: perfil.php');
+
+}else {
+echo "erro";
+$sql->execute();
+header("Location:index.php");      }
 }
+    
+
+
+
+
+
+
 
 ?>

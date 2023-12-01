@@ -1,19 +1,6 @@
 
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-<?php include 'bases/head.php' ?>
-<title>Lista de usuários</title>
-<style>
-  
-</style>
-</head>
-<body>
-
-<?php include 'bases/menu.php' ?>
-
-
 <?php
+session_start();
 
 require 'config.php';
 
@@ -25,6 +12,7 @@ if(isset($_POST['criar'])){
   $email = filter_input(INPUT_POST,'email');
   $senha = filter_input(INPUT_POST,'senha');
 
+  $senha_cripto=md5($senha);
 // AUTENTICAÇÂO
 //verifica se ja existe uma matricula especifica no bd, se existir, manda para página de login, caso 
 //contrario o user vai para pagina de apostilas
@@ -34,7 +22,7 @@ if(isset($_POST['criar'])){
       $linhas= $sql-> rowCount();
 
       if($linhas >=1){
-        // header("Location:login.php?alerta=Essa conta já está cadastrada, realize login"); 
+        header("Location:login.php?alerta=Essa conta já está cadastrada, realize login"); 
          
 
       }else {
@@ -44,10 +32,10 @@ if(isset($_POST['criar'])){
       $sql-> bindValue(':matricula',$matricula); 
       $sql-> bindValue(':nome',$nome);
       $sql-> bindValue(':email',$email);
-      $sql-> bindValue(':senha',$senha);
+      $sql-> bindValue(':senha', $senha_cripto);
 
-      //$sql->execute();
-    //  header("Location:apostilas.php");      
+      $sql->execute();
+      header("Location:login.php");      
       }
           
       exit;}
@@ -55,7 +43,3 @@ if(isset($_POST['criar'])){
    
 ?>
 
-
-
-</body>
-</html>

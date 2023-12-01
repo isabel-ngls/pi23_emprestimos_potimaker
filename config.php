@@ -1,16 +1,19 @@
 <?php
 // PARA O FRONT: não precisa de html e css nessa página. Ela é apenas programação, não aparece para o user
-  $db_host = "localhost:3306";
   $db_name = "bd_potimaker";
+  $db_host = "localhost";
   $db_user = "root";
   $db_password = "";
+  $port="3306";
 
   //PDO chama a classe da variavel e passa como parametro o nome do banco, o local de acesso, o nome de usuario e senha)
   //mysql é o tipo de conexção
-  $pdo = new PDO("mysql:dbname=".$db_name."; host=".$db_host , $db_user, $db_password);
+
+  $pdo = new PDO("mysql:host=$db_host;port=$port;dbname=".$db_name,$db_user,$db_password);
 
   //chama a função query para fazer uma consulta na tabela usuario
 // Consulta na tabela "usuario"
+
   $sqlUsuario = $pdo->query('SELECT * FROM usuario');
   $dadosUsuario = $sqlUsuario->fetchAll(PDO::FETCH_ASSOC);
 

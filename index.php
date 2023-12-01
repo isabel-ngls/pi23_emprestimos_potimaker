@@ -68,7 +68,7 @@
         <div class="box sec2">
           <img src="src/imagens/livro.png" alt="Ícone de livro" width="375px">
           <h4>Escolha da apostila</h4>
-          <p>Você é redirecionado para a página de exibição das apostilas para poder escolher a que deseja.</p>
+          <p>Depois disso, você é redirecionado para a página de exibição das apostilas para poder escolher a que deseja.</p>
           <img src="src/imagens/seta.png" alt="Ícone de seta para baixo" width="100px">
         </div>
         <div class="box sec3">

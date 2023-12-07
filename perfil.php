@@ -2,6 +2,12 @@
 require "config.php";
 session_start();
 
+if(isset($_POST["logout"])){
+  session_destroy();
+
+  header("Location: index.php");
+
+}
 
 ?>
 
@@ -45,6 +51,12 @@ session_start();
         <td>Data: 00/00/00</td>
       </tr>
     </table>
+
+    <form action="perfil.php" method="post">
+    <input type="submit" name="logout" value="Sair" >
+
+
+    </form>
 </div>
 </div>
 </div>

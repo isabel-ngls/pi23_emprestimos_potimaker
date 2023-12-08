@@ -18,6 +18,32 @@ if(isset($_POST["logout"])){
 <?php include 'bases/head.php' ?>
 <title>Meu Perfil</title>
 <link rel="stylesheet" type="text/css" href="src/css/perfil.css" />
+<style>
+  .logout{
+    background-color: #5FB8C6;
+    display: inline-block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 25px;
+    padding-left: 25px;
+    position: static;
+    text-align: justify;
+    border-radius: 50px;
+    font-size: 15px;
+    font-weight: bold;
+    box-shadow: 10px 5px 5px #315754;
+    transition: all 0.4s ease;
+    margin-left: 185px;
+    color: #ffff;
+    font-family: 'Lexend', sans-serif;
+    border: white;
+  }
+
+  .logout:hover{
+    color: #5EB9C5;
+    background-color: #f5f5f5;
+  }
+</style>
 <body>
 
 <?php include 'bases/menu.php' ?>
@@ -53,7 +79,7 @@ if(isset($_POST["logout"])){
     </table>
 
     <form action="perfil.php" method="post">
-    <input type="submit" name="logout" value="Sair" >
+    <input class="logout" type="submit" name="logout" value="Sair" >
 
 
     </form>

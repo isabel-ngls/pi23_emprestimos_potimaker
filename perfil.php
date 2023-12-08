@@ -58,6 +58,7 @@ if(isset($_POST["logout"])){
     <p class="centralizar">Email: aluno@escolar.com</p> -->
   </div>
   <div class="right-container">
+  <a href="apostilas.php">Ir para página de apostilas</a>
     <h3 class="gradienttext">Apostilas emprestadas</h3>
     <table>
         <tr>
@@ -80,11 +81,15 @@ if(isset($_POST["logout"])){
 
     <form action="perfil.php" method="post">
     <input class="logout" type="submit" name="logout" value="Sair" >
+  
+   <form>
 
+  
 
-    </form>
 </div>
 </div>
+
+
 </div>
 
 <?php include 'bases/rodape.php' ?>

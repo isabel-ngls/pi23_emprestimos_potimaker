@@ -1,3 +1,12 @@
+<?php
+session_start();
+
+
+?>
+
+
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -14,7 +23,7 @@
   <div class="left-container">
     <img src="src/imagens/userr.png" alt="Ícone de estudante">
     <h2 class="gradienttext">Administrador</h2>
-    <p class="centralizar">Matrícula: 00000000000000</p>
+    <p class="centralizar"><?php echo  $_SESSION["matricula"];?></p>
     <p class="centralizar">Email: admim@escolar.com</p>
   </div>
   <div class="right-container">

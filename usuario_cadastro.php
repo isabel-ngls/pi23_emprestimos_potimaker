@@ -11,6 +11,7 @@ if(isset($_POST['criar'])){
   $nome  = filter_input(INPUT_POST,'nome');
   $email = filter_input(INPUT_POST,'email');
   $senha = filter_input(INPUT_POST,'senha');
+  $cod = filter_input(INPUT_POST,'codigo');
 
   $senha_cripto=md5($senha);
 // AUTENTICAÇÂO
@@ -25,7 +26,20 @@ if(isset($_POST['criar'])){
         header("Location:login.php?alerta=Essa conta já está cadastrada, realize login"); 
          
 
-      }else {
+      }if($cod==123) {
+        //prepara a query sem os caracteres especiais
+              $sql = $pdo-> prepare(" INSERT INTO administrador (matricula,nome,senha) 
+              VALUES (:matricula, :nome, :senha) ");
+              $sql-> bindValue(':matricula',$matricula); 
+              $sql-> bindValue(':nome',$nome);
+              $sql-> bindValue(':senha', $senha_cripto);
+        
+              $sql->execute();
+              header("Location:adm_login.php?alerta=Cadastrado como administrador");  
+              
+              }
+
+      }else  {
 //prepara a query sem os caracteres especiais
       $sql = $pdo-> prepare(" INSERT INTO usuario (matricula,nome,email_escolar,senha) 
       VALUES (:matricula, :nome, :email, :senha) ");
@@ -35,8 +49,9 @@ if(isset($_POST['criar'])){
       $sql-> bindValue(':senha', $senha_cripto);
 
       $sql->execute();
-      header("Location:login.php");      
-      }
+      header("Location:login.php");  
+      
+      
           
       exit;}
       

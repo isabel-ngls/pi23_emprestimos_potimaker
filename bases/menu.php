@@ -58,7 +58,7 @@
                 </a>
               </li>
               <li>
-                <a href="#administração" class="nav-link text-white">
+                <a href="adm_login.php" class="nav-link text-white">
                   <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#people-circle"/></svg>
                   Administração
                 </a>

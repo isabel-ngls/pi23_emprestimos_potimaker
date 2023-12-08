@@ -4,6 +4,63 @@
 <?php include 'bases/head.php' ?>
 <title>PotiEmpresta</title>
 </head>
+<style>
+  @media screen and (max-width: 426px) {
+    .comp {
+      padding-top: 300px;
+      margin-top: 50px;
+      position: relative;
+      top: 0;
+      left: 0;
+      left: 10%; 
+    }
+
+    .texto h1 {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .page2, .page3 {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .page2 p, .page2 h2{
+    margin-left: 30px;
+  }
+
+  .page3 p{
+    margin-left: 60px;
+  }
+
+  .page3 h2{
+    margin-left: 20px;
+    margin-top: -270px;
+  }
+
+  .page3 img{
+    margin-left: -50px
+  }
+
+  .potimaker img, .icon img {
+    width: 100%; 
+    margin-bottom: 10px; 
+  }
+
+  .page5 img {
+    width: 100%; 
+    margin-top: 600px;
+  }
+
+  .page5 h1 {
+    font-size: 1.5em; 
+  }
+
+}
+
+
+
+</style>
 <body>
 
 <?php include 'bases/menu.php' ?>
@@ -36,7 +93,7 @@
           simplesmente Potimaker, é um espaço <br>
           de colaboração e experimentação onde <br>
           várias pessoas podem trabalhar juntas <br>
-          para transformar suas ideias em realidade.</p>
+          para transformar suas ideias em realidade</p>
       </div>
     </section>
 
@@ -52,11 +109,11 @@
       que se interessarem. Assim, pensando <br>
       em um melhor e mais eficiente <br>
       gerenciamento desses recursos, o <br> 
-      PotiEmpresta foi criado.</p>
+      PotiEmpresta foi criado</p>
       </div>
     </section>
 
-    <section class="page4"id="funcionamento" >
+    <section class="page4" id="funcionamento" >
       <h2>Como funciona</h2>
       <div class="dividir">
         <div class="box sec1">

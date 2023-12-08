@@ -401,7 +401,7 @@ footer{
     margin-top: 20px;
     font-size: 18px;
 }
- /*Responsividade página inicial*/
+ /*Responsividade da página inicial*/
  @media (max-width: 768px) {
     .home {
         padding: 20px; 

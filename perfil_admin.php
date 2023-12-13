@@ -1,6 +1,9 @@
 <?php
+
 session_start();
-require "ver_loginexiste.php";
+if(!isset($_SESSION["matricula"])){
+  header("Location:index.php");
+}
 
 ?>
 

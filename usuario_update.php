@@ -1,6 +1,6 @@
 <?php
 require 'config.php';
-
+//require "ver_loginexiste.php";
 if(isset($_GET['matricula'])){
     $matricula = (int)$_GET['matricula'];
 

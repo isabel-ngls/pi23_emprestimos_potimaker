@@ -1,7 +1,7 @@
 <?php
 // PARA O FRONT: não precisa de html e css nessa página. Ela é apenas programação, não aparece para io user
 require 'config.php';
-
+//require "ver_loginexiste.php";
 
 if(isset($_POST['criar'])){
 

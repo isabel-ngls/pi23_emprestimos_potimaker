@@ -1,6 +1,6 @@
 <?php
 require 'config.php';
-
+//require "ver_loginexiste.php";
 if(isset($_GET['isbn'])){
     $isbn = (int)$_GET['isbn'];
 

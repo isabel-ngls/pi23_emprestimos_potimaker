@@ -3,7 +3,7 @@
 <head>
 <?php include 'bases/head.php' ;
 require 'config.php';
-
+require "ver_loginexiste.php";
 
 ?>
 

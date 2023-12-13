@@ -1,7 +1,7 @@
 <?php
 //essa pag sera para adm (provavelmente)
 require "config.php";
-
+//require "ver_loginexiste.php";
   if(isset($_GET['delete'])){
     $matricula=(int)$_GET['delete'];
     $pdo->exec("DELETE FROM usuario WHERE matricula=$matricula");

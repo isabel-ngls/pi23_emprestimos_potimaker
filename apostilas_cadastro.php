@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-<?php include 'bases/head.php' ?>
+<?php include 'bases/head.php';
+//require "ver_loginexiste.php";?>
 <title>Cadastro</title>
 <style>
       /*Cadastro*/

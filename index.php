@@ -84,7 +84,7 @@
 
     <section class="page2" id="poti">
       <div class="potimaker">
-        <img src="src/imagens/pm1.png" alt="Imagem do FabLab Potimaker" width="475px">
+        <img src="src/imagens/PM1.png" alt="Imagem do FabLab Potimaker" width="475px">
       </div> 
       <div class="somos">
           <h2>O Potimaker</h2>

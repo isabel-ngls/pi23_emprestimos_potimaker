@@ -52,13 +52,13 @@
                 </a>
               </li>
               <li>
-                <a href="#funcionamento" class="nav-link text-white">
+                <a href="perfil.php" class="nav-link text-white">
                   <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#grid"/></svg>
                   Meu Perfil
                 </a>
               </li>
               <li>
-                <a href="adm_login.php" class="nav-link text-white">
+                <a href="perfil_admin.php" class="nav-link text-white">
                   <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#people-circle"/></svg>
                   Administração
                 </a>
@@ -80,6 +80,6 @@
             </div>
           </div>
         </div>
-        
+
       </div>
   </header>

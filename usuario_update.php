@@ -40,6 +40,7 @@ if(isset($_POST['editar'])) {
 ?>
 
 <!-- Formulário de edição -->
+<!--adicionar CSS-->
 <form method="post">
     <label for="nome">Nome:</label>
     <input type="text" name="nome" value="<?= $usuario['nome'] ?>" required>

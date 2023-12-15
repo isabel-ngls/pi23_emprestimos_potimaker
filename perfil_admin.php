@@ -33,8 +33,8 @@ if(!isset($_SESSION["matricula"])){
   <h3 class="gradienttext tamanho">Páginas administrativas</h3>
   <br>
   <a href="apostilas_cadastro.php"><i class="fa-solid fa-file-circle-plus"></i>  Cadastrar apostilas</a> <br>
-  <a href=""><i class="fa-solid fa-list-check"></i>  Gerenciar apostilas</a> <br>
-  <a href=""><i class="fa-solid fa-people-roof"></i>  Gerenciar usuários</a>
+  <a href="apostilas_admin.php"><i class="fa-solid fa-list-check"></i>  Gerenciar apostilas</a> <br>
+  <a href="usuario_adm.php"><i class="fa-solid fa-people-roof"></i>  Gerenciar usuários</a>
     
 </div>
 </div>

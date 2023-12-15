@@ -45,6 +45,7 @@ if(isset($_POST['criar'])){
 
    
 ?>
+<!--adicionar CSS -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -64,6 +65,8 @@ if(isset($_POST['criar'])){
       }
     
     }?></p>
+
+    
 
 </body>
 </html>

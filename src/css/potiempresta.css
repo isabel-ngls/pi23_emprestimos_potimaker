@@ -44,6 +44,41 @@ body{
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
     }
 
+    .admin{
+        display: block; 
+        margin-left: 45px;
+        font-size: 25px;
+        margin-bottom: 4px;
+    }
+
+    .nova{
+        display: block; 
+        margin-left: 35px;
+        font-size: 25px;
+        margin-bottom: 4px;
+    }
+
+    .logout{
+        display: block; 
+        margin-left: 20px;
+        font-size: 25px;
+        margin-bottom: 4px;
+    }
+
+    .index{
+        display: block; 
+        margin-left: 14px;
+        font-size: 25px;
+        margin-bottom: 4px;
+    }
+
+    .user{
+        display: block; 
+        margin-left: 30px;
+        font-size: 25px;
+        margin-bottom: 4px;
+    }
+
 /*Footer*/
 * {
     margin: 0;

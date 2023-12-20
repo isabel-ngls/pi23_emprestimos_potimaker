@@ -63,7 +63,7 @@
 </style>
 <body>
 
-<?php include 'bases/nav_in.php' ?>
+<?php include 'bases/nav_out.php' ?>
 
   <div class="content">
   <section class="page1">

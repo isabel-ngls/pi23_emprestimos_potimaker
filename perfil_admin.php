@@ -19,7 +19,7 @@ if(!isset($_SESSION["matricula"])){
 <link rel="stylesheet" type="text/css" href="src/css/perfil.css" />
 <body>
 
-<?php include 'bases/menu.php' ?>
+<?php include 'bases/nav_in.php' ?>
 
     <div class="perfil">
     <div class="card">

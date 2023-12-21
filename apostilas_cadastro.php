@@ -134,7 +134,7 @@ input[type="submit"]:hover {
 
 <body>
 
-<?php include 'bases/menu.php' ?>
+<?php include 'bases/nav_in.php' ?>
 
   <!--Cadastro de apostilas-->
   <div class="box">

@@ -41,7 +41,7 @@ input[type="submit"]:hover {
 </head>
 <body>
 
-<?php include 'bases/menu.php' ?>
+<?php include 'bases/nav_in.php' ?>
 
 <?php foreach ($dadosApostila as $key => $value ){?>
       

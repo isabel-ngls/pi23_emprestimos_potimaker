@@ -63,7 +63,7 @@
 </head>
 <body>
 
-<?php include 'bases/menu.php' ?>
+<?php include 'bases/nav_in.php' ?>
 
       <div class="product-container">
         <img src="src/imagens/livro1.png" alt="Ícone de apostila" ">

@@ -45,12 +45,30 @@
                   Criar conta
                 </a>
               </li>
+              <?php 
+                if (session_id()=='') {
+                session_start();}
+
+                if (!isset($_SESSION["matricula"])) {
+              ?>
               <li>
                 <a href="login.php" class="nav-link text-white">
                   <i class="fa-solid fa-user user"></i>
                   <!--Login-->
                   Meu Perfil
                 </a>
+              </li>
+              <?php
+                }else{
+              ?>
+                <li>
+                <a href="desconectar.php" class="nav-link text-white">
+                    <i class="fa-solid fa-right-from-bracket logout"></i>
+                  Logout
+                </a>
+              <?php
+                }
+              ?>
               </li>
               <li>
                 <a href="adm_login.php" class="nav-link text-white">

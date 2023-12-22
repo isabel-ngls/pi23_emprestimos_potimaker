@@ -46,16 +46,13 @@
                 </a>
               </li>
               <?php 
-                if (session_id()=='') {
-                session_start();}
-
                 if (!isset($_SESSION["matricula"])) {
               ?>
               <li>
                 <a href="login.php" class="nav-link text-white">
                   <i class="fa-solid fa-user user"></i>
                   <!--Login-->
-                  Meu Perfil
+                  Login
                 </a>
               </li>
               <?php

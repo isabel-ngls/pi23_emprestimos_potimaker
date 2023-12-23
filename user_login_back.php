@@ -23,7 +23,7 @@ if($linhas >=1){
   session_start();
   $_SESSION['matricula'] = $matricula;
   //$_SESSION['nome'] = $linhas['nome'];
-  header('location: perfil.php');
+  header('location: user_perfil.php');
 
 }else {
 echo "erro";

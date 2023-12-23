@@ -22,7 +22,7 @@ if($linhas >=1){
   session_start();
   $_SESSION['matricula'] = $matricula;
   //$_SESSION['nome'] = $linhas['nome'];
-  header('location: perfil_admin.php');
+  header('location: adm_perfil.php');
 
 }else {
 echo "erro";

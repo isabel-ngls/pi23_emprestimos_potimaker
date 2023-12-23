@@ -162,10 +162,10 @@ input[type="submit"]:hover {
         </div>
         <div class="form-box">
         <h2><i class="fa-solid fa-right-to-bracket fa-beat"></i>  Login</h2>
-        <p>Não possui conta?<a class="login" href="cadastro.php"> Crie</a> uma</p>
+        <p>Não possui conta?<a class="login" href="user_cadastro_front.php"> Crie</a> uma</p>
 
         
-            <form action="admin_login.php" method="post">
+            <form action="user_login_back.php" method="post">
                 <div class="input-group">
                     <label for="matrícula">Matrícula:</label>
                     <input type="number" id="matrícula" name="matricula" placeholder="Digite sua matrícula do SUAP" required>

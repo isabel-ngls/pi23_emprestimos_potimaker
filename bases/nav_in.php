@@ -40,7 +40,7 @@
                 </a>
               </li>
               <li>
-                <a href="cadastro.php" class="nav-link text-white">
+                <a href="user_cadastro_front.php" class="nav-link text-white">
                     <i class="fa-solid fa-circle-plus nova"></i>
                   Criar conta
                 </a>
@@ -49,7 +49,7 @@
                 if (!isset($_SESSION["matricula"])) {
               ?>
               <li>
-                <a href="login.php" class="nav-link text-white">
+                <a href="user_login_front.php" class="nav-link text-white">
                   <i class="fa-solid fa-user user"></i>
                   <!--Login-->
                   Login
@@ -68,7 +68,7 @@
               ?>
               </li>
               <li>
-                <a href="adm_login.php" class="nav-link text-white">
+                <a href="adm_login_front.php" class="nav-link text-white">
                     <i class="fa-brands fa-black-tie admin"></i>
                   Administração
                 </a>

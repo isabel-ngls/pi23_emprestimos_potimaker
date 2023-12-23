@@ -1,31 +1,24 @@
 <?php
-if(isset($_GET['erro'])){
-
-    echo $_GET['erro'];
+session_start();
+if(!isset($_SESSION["matricula"])){
+  header("Location:index.php");
 }
-if(isset($_GET['alerta'])){
 
-  echo $_GET['alerta'];
-
-  
-
-}
 
 ?>
-
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-<?php include 'bases/head.php' ?>
-<title>Login</title>
+<?php include 'bases/head.php';
+//require "ver_loginexiste.php";?>
+<title>Cadastro</title>
 <style>
       /*Cadastro*/
       body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-image: url(imagens/fundo_log.png);
+    background-image: url(src/imagens/fundo_apo.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -59,15 +52,11 @@ if(isset($_GET['alerta'])){
     width: 50%;
     height: 135%;
     border-radius: 0 20px 20px 0;
-    display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .form-box h2{
     font-size: 30px;
-    color: #5EA0C5;
+    color: #35B2AE;
     font-family: 'Lexend', sans-serif;
 }
 
@@ -80,7 +69,7 @@ form .input-group{
 }
 
 form .input-group label{
-    color: #417086;
+    color: #369D9A;
     font-weight: bold;
     display: block;
     margin-bottom: 5px;
@@ -101,13 +90,13 @@ form .input-group input{
 }
 
 form .input-group input:focus{
-    border-color: #3598B2;
+    border-color: #5EA0C5;
 }
 
 .criar input[type="submit"]{
     width: 100%;
     height: 47px;
-    background: #3598B2;
+    background: #62C1CD;
     border-radius: 20px;
     outline: none;
     border: none;
@@ -123,7 +112,7 @@ form .input-group input:focus{
 
 input[type="submit"]:hover {
     background-color: #ffff; 
-    color: #3598B2;
+    color: #62C1CD;
 }
 
 .login{
@@ -155,37 +144,47 @@ input[type="submit"]:hover {
 
 <?php include 'bases/nav_in.php' ?>
 
-  <!--Login-->
+  <!--Cadastro de apostilas-->
   <div class="box">
         <div class="img-box">
-            <img src="src/imagens/icon_log.png" width="250px" height="auto" alt="Ícone de cadastro">
+            <img src="src/imagens/icon_apo.png" width="550px" height="auto" alt="Ícone de cadastro">
         </div>
         <div class="form-box">
-        <h2><i class="fa-solid fa-right-to-bracket fa-beat"></i>  Login</h2>
-        <p>Não possui conta?<a class="login" href="cadastro.php"> Crie</a> uma</p>
-
-        
-            <form action="usuario_login.php" method="post">
+        <h2> <i class="fa-solid fa-book fa-beat"></i> Cadastro de Apostilas</h2>
+        <!--formulário--> 
+            <form action="emprestimo_add_back.php" method="post">
                 <div class="input-group">
-                    <label for="matrícula">Matrícula:</label>
-                    <input type="number" id="matrícula" name="matricula" placeholder="Digite sua matrícula do SUAP" required>
+                    <label for="nome">Data de Emprestimo:</label>
+                    <input type="date" id="data_emprestimo" name="data_emprestimo" required>
                 </div>
                 <div class="input-group">
-                    <label for="senha">Senha:</label>
-                    <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
+                    <label for="email">Data de Devolução:</label>
+                    <input type="date" id="data_devolucao" name="data_devolucao" required>
+                </div>
+                <div class="input-group">
+                    <label for="user">Matricula:</label>
+                    <input type="text" id="user" name="user" placeholder="Digite a matrícula do usuário" required>
+                </div>
+                <div class="input-group">
+                    <label for="isbn">ISBN:</label>
+                    <input type="number" id="isbn" name="isbn" placeholder="Digite o ISBN da apostila (13 dígitos)" required>
                 </div>
                 <div class="criar">
-                    <input type="submit" name="criar" value="Logar">
+                    <input type="submit" name="cadastrar" value="Cadastrar">
                 </div>
             </form>
-
-
         </div>
     </div>
 
   <div class="espaço"></div>
-      
+  
   <?php include 'bases/rodape.php' ?>
 
 </body>
 </html>
+
+
+
+
+
+

@@ -22,6 +22,10 @@
   $dadosApostila = $sqlApostila->fetchAll(PDO::FETCH_ASSOC);
   //fetchALL "pega" os elementos da tabela 
 
+  $sqlEmprestimo = $pdo->query('SELECT * FROM emprestimo_apostila');
+  $dadosEmprestimo = $sqlEmprestimo->fetchAll(PDO::FETCH_ASSOC);
+  //fetchALL "pega" os elementos da tabela 
+
   //echo('<pre>');//retirar isso
 
   //os dados pego pelo fetchAll são armazenados na variavel $dados

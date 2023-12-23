@@ -40,9 +40,9 @@
                 </a>
               </li>
               <li>
-                <a href="cadastro.php" class="nav-link text-white">
+                <a href="user_perfil_front.php" class="nav-link text-white">
                     <i class="fa-solid fa-circle-plus nova"></i>
-                  Criar conta
+                 Perfil usuário
                 </a>
               </li>
               <li>
@@ -52,7 +52,7 @@
                 </a>
               </li>
               <li>
-                <a href="adm_login.php" class="nav-link text-white">
+                <a href="adm_perfil_front.php" class="nav-link text-white">
                     <i class="fa-brands fa-black-tie admin"></i>
                   Administração
                 </a>

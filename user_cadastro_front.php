@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-<?php include 'bases/head.php';
-//require "ver_loginexiste.php";?>
+<?php include 'bases/head.php' ?>
 <title>Cadastro</title>
 <style>
       /*Cadastro*/
@@ -10,7 +9,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-image: url(src/imagens/fundo_apo.png);
+    background-image: url(imagens/fundo_cad.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -48,7 +47,7 @@
 
 .form-box h2{
     font-size: 30px;
-    color: #35B2AE;
+    color: #5EA0C5;
     font-family: 'Lexend', sans-serif;
 }
 
@@ -61,7 +60,7 @@ form .input-group{
 }
 
 form .input-group label{
-    color: #369D9A;
+    color: #417086;
     font-weight: bold;
     display: block;
     margin-bottom: 5px;
@@ -88,7 +87,7 @@ form .input-group input:focus{
 .criar input[type="submit"]{
     width: 100%;
     height: 47px;
-    background: #62C1CD;
+    background: #5EA0C5;
     border-radius: 20px;
     outline: none;
     border: none;
@@ -104,7 +103,7 @@ form .input-group input:focus{
 
 input[type="submit"]:hover {
     background-color: #ffff; 
-    color: #62C1CD;
+    color: #5EA0C5;
 }
 
 .login{
@@ -136,33 +135,41 @@ input[type="submit"]:hover {
 
 <?php include 'bases/nav_in.php' ?>
 
-  <!--Cadastro de apostilas-->
+  <!--Cadastro de usuário-->
   <div class="box">
         <div class="img-box">
-            <img src="src/imagens/icon_apo.png" width="550px" height="auto" alt="Ícone de cadastro">
+            <img src="src/imagens/icon_cad.png" width="250px" height="auto" alt="Ícone de cadastro">
         </div>
         <div class="form-box">
-        <h2> <i class="fa-solid fa-book fa-beat"></i> Cadastro de Apostilas</h2>
+        <h2> <i class="fa-solid fa-user fa-beat"></i> Crie sua conta</h2>
+        <p>Já possui uma conta como usuário ? Faça <a class="login" href="user_login_front.php">login</a></p>
+        <p>Já possui uma conta como Administrador ? Faça <a class="login" href="adm_login_front.php">login</a></p>
+
         <!--formulário--> 
-            <form action="apostilas_adm.php" method="post">
+
+            <form action="user_cadastro_back.php" method="post">
                 <div class="input-group">
                     <label for="nome">Nome:</label>
-                    <input type="text" id="nome" name="nome" placeholder="Digite o nome da apostila" required>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
                 </div>
                 <div class="input-group">
-                    <label for="email">Quantidade:</label>
-                    <input type="number" id="quantidade" name="quantidade" placeholder="Quantidade de apostilas disponíveis para empréstimo" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Digite seu endereço de email" required>
                 </div>
                 <div class="input-group">
-                    <label for="descrição">Descrição:</label>
-                    <input type="text" id="descricao" name="descricao" placeholder="Digite uma pequena descrição da apostila" required>
+                    <label for="matrícula">Matrícula:</label>
+                    <input type="number" id="matricula" name="matricula" placeholder="Digite sua matrícula do SUAP" required>
                 </div>
                 <div class="input-group">
-                    <label for="isbn">ISBN:</label>
-                    <input type="number" id="isbn" name="isbn" placeholder="Digite o ISBN da apostila (13 dígitos)" required>
+                    <label for="senha">Senha:</label>
+                    <input type="password" id="senha" name="senha" placeholder="Escolha uma senha" required>
+                </div>
+                <div class="input-group">
+                    <label for="codigo">Código de validação</label>
+                    <input type="text" id="codigo" name="codigo" placeholder="Preecha somente se você for administrador">
                 </div>
                 <div class="criar">
-                    <input type="submit" name="criar" value="Criar">
+                    <input type="submit" name="criar" value="Criar conta">
                 </div>
             </form>
         </div>

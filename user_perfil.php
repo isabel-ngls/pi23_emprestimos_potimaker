@@ -6,12 +6,6 @@ if(!isset($_SESSION["matricula"])){
   header("Location:index.php");
 }
 
-if(isset($_POST["logout"])){
-  session_destroy();
-
-header("Location: index.php");
-
-}
 
 ?>
 
@@ -83,10 +77,7 @@ header("Location: index.php");
       </tr>
     </table>
 
-    <form action="perfil.php" method="post">
-    <input class="logout" type="submit" name="logout" value="Sair" >
-  
-   <form>
+   
 
   
 

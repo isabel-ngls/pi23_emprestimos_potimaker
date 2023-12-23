@@ -1,15 +1,31 @@
+<?php
+if(isset($_GET['erro'])){
+
+    echo $_GET['erro'];
+}
+if(isset($_GET['alerta'])){
+
+  echo $_GET['alerta'];
+
+  
+
+}
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
 <?php include 'bases/head.php' ?>
-<title>Cadastro</title>
+<title>Login</title>
 <style>
       /*Cadastro*/
       body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-image: url(imagens/fundo_cad.png);
+    background-image: url(imagens/fundo_log.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -43,6 +59,10 @@
     width: 50%;
     height: 135%;
     border-radius: 0 20px 20px 0;
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .form-box h2{
@@ -81,13 +101,13 @@ form .input-group input{
 }
 
 form .input-group input:focus{
-    border-color: #5EA0C5;
+    border-color: #3598B2;
 }
 
 .criar input[type="submit"]{
     width: 100%;
     height: 47px;
-    background: #5EA0C5;
+    background: #3598B2;
     border-radius: 20px;
     outline: none;
     border: none;
@@ -103,7 +123,7 @@ form .input-group input:focus{
 
 input[type="submit"]:hover {
     background-color: #ffff; 
-    color: #5EA0C5;
+    color: #3598B2;
 }
 
 .login{
@@ -135,47 +155,36 @@ input[type="submit"]:hover {
 
 <?php include 'bases/nav_in.php' ?>
 
-  <!--Cadastro de usuário-->
+  <!--Login-->
   <div class="box">
         <div class="img-box">
-            <img src="src/imagens/icon_cad.png" width="250px" height="auto" alt="Ícone de cadastro">
+            <img src="src/imagens/icon_log.png" width="250px" height="auto" alt="Ícone de cadastro">
         </div>
         <div class="form-box">
-        <h2> <i class="fa-solid fa-user fa-beat"></i> Crie sua conta</h2>
-        <p>Já possui uma conta ? Faça <a class="login" href="login.php">login</a></p>
+        <h2><i class="fa-solid fa-right-to-bracket fa-beat"></i>  Login</h2>
+        <p>Não possui conta?<a class="login" href="user_cadastro_front.php"> Crie</a> uma</p>
 
-        <!--formulário--> 
-
-            <form action="usuario_cadastro.php" method="post">
-                <div class="input-group">
-                    <label for="nome">Nome:</label>
-                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
-                </div>
-                <div class="input-group">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" placeholder="Digite seu endereço de email" required>
-                </div>
+        
+            <form action="adm_login_back.php" method="post">
                 <div class="input-group">
                     <label for="matrícula">Matrícula:</label>
-                    <input type="number" id="matricula" name="matricula" placeholder="Digite sua matrícula do SUAP" required>
+                    <input type="number" id="matrícula" name="matricula" placeholder="Digite sua matrícula do SUAP" required>
                 </div>
                 <div class="input-group">
                     <label for="senha">Senha:</label>
-                    <input type="password" id="senha" name="senha" placeholder="Escolha uma senha" required>
-                </div>
-                <div class="input-group">
-                    <label for="codigo">Código de validação</label>
-                    <input type="text" id="codigo" name="codigo" placeholder="Preecha somente se você for administrador">
+                    <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
                 </div>
                 <div class="criar">
-                    <input type="submit" name="criar" value="Criar conta">
+                    <input type="submit" name="criar" value="Logar">
                 </div>
             </form>
+
+
         </div>
     </div>
 
   <div class="espaço"></div>
-  
+      
   <?php include 'bases/rodape.php' ?>
 
 </body>

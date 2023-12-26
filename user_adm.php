@@ -21,18 +21,36 @@ require "config.php";
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="src/css/admin.css" />
   <title>Document</title>
 </head>
 <body>
-  <h1>
+  <p>
+    <h1>Administração de Usuários</h1>
     <?php 
       foreach ($dadosUsuario as $key => $value ){
+          echo '<br>'; ?>
 
-        echo '<br>';
-           echo '<a href="?delete=' . $value['matricula'] . '">(X)</a> ';
-           echo '<a href="usuario_update.php?matricula=' . $value['matricula'] . '">Editar</a> | ';
-           echo $value['matricula'] . ' | ' . $value['nome'] . ' | ' . $value['email_escolar'];  }
+        <div class="card">
+         <div class="left-container">
+
+         <?php
+           echo '<a class= "text2" href="?delete=' . $value['matricula'] . '">Excluir</a> ';
+           echo '<a class= "text2" href="usuario_update.php?matricula=' . $value['matricula'] . '">Editar</a>  ';
+           ?>
+        </div>
+
+        <div class="right-container">
+        <p class="text1"> MATRÍCULA: <?php echo $value['matricula']; ?> </p>
+          
+        <p class="text1"> NOME: <?php echo $value['nome'] ; ?> </p>
+        <p class="text1"> NOME: <?php echo $value['email_escolar'];  ?> </p>
+        </div>
+        </div>
+
+      <?php
+          }
       ?>
-  </h1>
+  </p>
 </body>
 </html>

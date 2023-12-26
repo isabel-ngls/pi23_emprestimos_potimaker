@@ -1,0 +1,99 @@
+body{
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(to right,  #8AC5E2, #CEEFF4 , #6FC1CC);
+
+}
+h1{
+    text-align: center;
+    color: #5EA0C5;
+    font-weight: bold;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 30px;
+    padding: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    width: 70%;
+    height: 300px;
+    margin-left: 250px;
+    background: #12c2e9; 
+    background: -webkit-linear-gradient(to right, #5EA0C5, #8AC5E2, #BAE6F4);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right,  #8AC5E2, #D2F3FD, #CEEFF4 , #6FC1CC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+  .left-container {
+    background-color: rgba(255, 255, 255, 0.5);
+    flex: 1;
+    max-width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height:200px;
+    padding: 10px;
+    margin: 30px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  .right-container {
+    background-color: rgba(255, 255, 255, 0.5);
+    flex: 1;
+    max-width:70%;
+    height:200px;
+    padding: 10px;
+    margin: 20px;
+    border-radius:30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .text1{
+  color: #5EA0C5;
+  margin-left: 20px;
+  margin-top: 20px;
+  font-weight: bold;
+
+}
+.text1:hover{
+  color: #3a7495
+}
+
+.text2{
+  text-decoration: none;
+  color: #3a7495;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 30px;
+}
+
+.text2:hover{
+  color: rgba(0, 0, 0, 0.2);
+}
+
+  @media only screen and (max-width: 860px) {
+    .card
+     {
+     flex-direction: column;
+     margin: 10px;
+     height: auto;
+     width: 90%;
+    }
+    .left-container{
+        flex: 1;
+        max-width:100%; 
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    .card
+     {
+     flex-direction: column;
+     margin: 10px;
+    }
+    .left-container{
+        flex: 1;
+        max-width:100%; 
+    }
+  }

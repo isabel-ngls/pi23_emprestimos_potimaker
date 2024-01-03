@@ -21,9 +21,11 @@ if(isset($_POST['cadastrar'])){
     $sqlIsbn->execute();
 
     if ($sqlUser->rowCount() == 0) {
-        header("Location: emprestimo_add_front.php?alerta=Matrícula não encontrada");
+        header("Location: emprestimo_add_front.php?error=matricula");
+        exit;
     } elseif ($sqlIsbn->rowCount() == 0) {
-        header("Location: emprestimo_add_front.php?alerta=Isbn não encontrado");
+        header("Location: emprestimo_add_front.php?error=isbn");
+        exit;
        
     } else {
      

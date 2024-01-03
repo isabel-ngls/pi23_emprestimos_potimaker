@@ -31,7 +31,7 @@ if(isset($_POST['criar'])){
         exit;
     } else {
         echo "Erro";
-        header("Location: user_login_front.php?alerta=Matrícula e/ou senha incorretos");
+        header("Location: user_login_front.php?error=autenticacao");
         exit;
     }
     

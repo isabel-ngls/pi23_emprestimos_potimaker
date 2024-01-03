@@ -23,7 +23,7 @@ if(isset($_POST['criar'])){
       $linhas= $sql-> rowCount();
 
       if($linhas >=1){
-        header("Location:user_login_front.php?alerta=Essa conta já está cadastrada, realize login"); 
+        header("Location:user_cadastro_front.php?error=login"); 
         
       }
       if($linhas == 0){
@@ -36,7 +36,7 @@ if(isset($_POST['criar'])){
               $sql-> bindValue(':senha', $senha_cripto);
         
               $sql->execute();
-              header("Location:adm_login_front.php?alerta=Cadastrado como administrador");  
+              header("Location:adm_login_front.php?error=adm");  
               
               }
 
@@ -50,7 +50,7 @@ if(isset($_POST['criar'])){
       $sql-> bindValue(':senha', $senha_cripto);
 
       $sql->execute();
-      header("Location:user_login_front.php?alerta=Cadastrado como usuário");  
+      header("Location:user_login_front.php?error=user");  
       
       
       exit;}}}

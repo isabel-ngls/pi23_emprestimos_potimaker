@@ -178,6 +178,14 @@ input[type="submit"]:hover {
   <div class="espaço"></div>
   
   <?php include 'bases/rodape.php' ?>
-
+  <script>
+    window.onload = function() {
+        const urlParams = new URLSearchParams(window.location.search);
+        const errorType = urlParams.get('error');
+        if (errorType === 'login') {
+            alert('Erro: Essa conta já está cadastrada, realize login.');
+        } 
+    };
+</script>
 </body>
 </html>

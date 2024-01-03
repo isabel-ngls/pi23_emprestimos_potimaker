@@ -5,6 +5,7 @@ if(!isset($_SESSION["matricula"])){
 }
 
 
+
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -180,6 +181,17 @@ input[type="submit"]:hover {
   
   <?php include 'bases/rodape.php' ?>
 
+  <script>
+    window.onload = function() {
+        const urlParams = new URLSearchParams(window.location.search);
+        const errorType = urlParams.get('error');
+        if (errorType === 'matricula') {
+            alert('Erro: Matricula de usuário não encontrada.');
+        } else if (errorType === 'isbn') {
+            alert('Erro: ISBN da apostila não encontrado.');
+        }
+    };
+</script>
 </body>
 </html>
 

@@ -27,8 +27,8 @@ $sql->bindParam(':matricula', $matricula);
        header('Location: adm_perfil.php');
         exit;
     } else {
-        echo "Erro";
-        header("Location: adm_login_front.php?alerta=Matrícula e/ou senha incorretos");
+        
+        header("Location: adm_login_front.php?error=autenticacao");
         exit;
     }
     

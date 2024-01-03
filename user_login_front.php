@@ -187,5 +187,17 @@ input[type="submit"]:hover {
       
   <?php include 'bases/rodape.php' ?>
 
+  <script>
+    window.onload = function() {
+        const urlParams = new URLSearchParams(window.location.search);
+        const errorType = urlParams.get('error');
+        if (errorType === 'autenticacao') {
+            alert('Erro: Matricula e/ou senha incorretas.');
+        } if (errorType === 'user') {
+            alert('Cadastrado como usuário.');
+        } 
+    };
+</script>
+
 </body>
 </html>

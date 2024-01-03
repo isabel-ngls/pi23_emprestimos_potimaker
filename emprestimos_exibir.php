@@ -39,7 +39,7 @@ if(isset($_GET['delete'])){
 </head>
 <body>
   <p>
-    <h1>Administração de Emprestimos</h1>
+    <h1>Administração de Empréstimos</h1>
     <?php 
       foreach ($dadosEmprestimo as $key => $value ){
           echo '<br>'; ?>

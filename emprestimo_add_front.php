@@ -18,7 +18,7 @@ if(!isset($_SESSION["matricula"])){
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-image: url(src/imagens/fundo_apo.png);
+    background-image: url(src/imagens/fundo_emp.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -56,7 +56,7 @@ if(!isset($_SESSION["matricula"])){
 
 .form-box h2{
     font-size: 30px;
-    color: #35B2AE;
+    color: #2F96C2;
     font-family: 'Lexend', sans-serif;
 }
 
@@ -69,7 +69,7 @@ form .input-group{
 }
 
 form .input-group label{
-    color: #369D9A;
+    color: #49A4CB;
     font-weight: bold;
     display: block;
     margin-bottom: 5px;
@@ -96,7 +96,7 @@ form .input-group input:focus{
 .criar input[type="submit"]{
     width: 100%;
     height: 47px;
-    background: #62C1CD;
+    background: #62A6CD;
     border-radius: 20px;
     outline: none;
     border: none;
@@ -112,7 +112,7 @@ form .input-group input:focus{
 
 input[type="submit"]:hover {
     background-color: #ffff; 
-    color: #62C1CD;
+    color: #62A6CD;
 }
 
 .login{
@@ -144,25 +144,25 @@ input[type="submit"]:hover {
 
 <?php include 'bases/nav_in.php' ?>
 
-  <!--Cadastro de apostilas-->
+  <!--Cadastro de empréstimo-->
   <div class="box">
         <div class="img-box">
-            <img src="src/imagens/icon_apo.png" width="550px" height="auto" alt="Ícone de cadastro">
+            <img src="src/imagens/calendario.png" width="550px" height="auto" alt="Ícone de cadastro">
         </div>
         <div class="form-box">
-        <h2> <i class="fa-solid fa-book fa-beat"></i> Cadastro de Apostilas</h2>
+        <h2> <i class="fa-solid fa-book fa-beat"></i> Cadastro de Empréstimo</h2>
         <!--formulário--> 
             <form action="emprestimo_add_back.php" method="post">
                 <div class="input-group">
-                    <label for="nome">Data de Emprestimo:</label>
+                    <label for="nome">Data de empréstimo:</label>
                     <input type="date" id="data_emprestimo" name="data_emprestimo" required>
                 </div>
                 <div class="input-group">
-                    <label for="email">Data de Devolução:</label>
+                    <label for="email">Data de devolução:</label>
                     <input type="date" id="data_devolucao" name="data_devolucao" required>
                 </div>
                 <div class="input-group">
-                    <label for="user">Matricula:</label>
+                    <label for="user">Matrícula:</label>
                     <input type="text" id="user" name="user" placeholder="Digite a matrícula do usuário" required>
                 </div>
                 <div class="input-group">

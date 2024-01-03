@@ -19,15 +19,22 @@ require "config.php";
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <?php include 'bases/head.php' ?>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="src/css/admin.css" />
-  <title>Document</title>
+  <style>
+        .esp{
+          margin-top: 50px;
+        }
+       </style>
+  <title>Gerenciar Usuários</title>
+  
   <?php include 'bases/nav_in.php' ?>
 </head>
 <body>
   <p>
-    <h1>Administração de Usuários</h1>
+    <h1 class="esp">Administração de Usuários</h1>
     <?php 
       foreach ($dadosUsuario as $key => $value ){
           echo '<br>'; ?>

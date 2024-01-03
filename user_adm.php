@@ -23,6 +23,7 @@ require "config.php";
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="src/css/admin.css" />
   <title>Document</title>
+  <?php include 'bases/nav_in.php' ?>
 </head>
 <body>
   <p>
@@ -52,5 +53,6 @@ require "config.php";
           }
       ?>
   </p>
+  <?php include 'bases/rodape.php' ?>
 </body>
 </html>

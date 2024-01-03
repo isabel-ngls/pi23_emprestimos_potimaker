@@ -13,12 +13,12 @@ if(isset($_POST['cadastrar'])){
  
 
 //prepara a query sem os caracteres especiais
-      $sql = $pdo-> prepare(" INSERT INTO emprestimo_apostila (data_emprestimo,data_devolucao, matricula_usuario) 
-      VALUES (:data_emprestimo, :data_devolucao, :user) ");
+      $sql = $pdo-> prepare(" INSERT INTO emprestimo_apostila (data_emprestimo,data_devolucao, matricula_usuario,isbn_apostila) 
+      VALUES (:data_emprestimo, :data_devolucao, :user,:isbn) ");
      $sql-> bindValue(':data_emprestimo',$data_emprestimo); 
      $sql-> bindValue(':data_devolucao', $data_devolucao );
      $sql-> bindValue(':user',$matricula_user );
-    // $sql-> bindValue(':isbn', $isbn_apostila);
+     $sql-> bindValue(':isbn', $isbn_apostila);
 
 
       $sql->execute();

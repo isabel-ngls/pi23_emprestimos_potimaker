@@ -180,6 +180,7 @@ input[type="submit"]:hover {
     }
 }
 </style>
+<?php include 'bases/nav_in.php' ?>
 </head>
 <body>
 
@@ -220,5 +221,6 @@ input[type="submit"]:hover {
         </div>
 </div>
 <div class="espaço"></div>
+<?php include 'bases/rodape.php' ?>
 </body>
 </html>

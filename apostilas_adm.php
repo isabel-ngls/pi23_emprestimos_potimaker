@@ -58,6 +58,8 @@ if(isset($_POST['criar'])){
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" type="text/css" href="src/css/admin.css" />
+  
+  <?php include 'bases/nav_in.php' ?>
 </head>
 <body>
 
@@ -92,6 +94,6 @@ if(isset($_POST['criar'])){
     
   </p>
 
-
+  <?php include 'bases/rodape.php' ?>
 </body>
 </html>

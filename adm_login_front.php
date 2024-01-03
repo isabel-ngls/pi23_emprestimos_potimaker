@@ -7,8 +7,6 @@ if(isset($_GET['alerta'])){
 
   echo $_GET['alerta'];
 
-  
-
 }
 
 ?>

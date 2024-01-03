@@ -53,7 +53,6 @@ if(isset($_POST['criar'])){
       header("Location:user_login_front.php?alerta=Cadastrado como usuário");  
       
       
-          
       exit;}}}
       
    

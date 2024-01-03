@@ -10,11 +10,11 @@ if(isset($_GET['matricula'])){
     $sql->execute();
     $usuario = $sql->fetch(PDO::FETCH_ASSOC);
 }
-   /*if(!$usuario) {
+  if(!$usuario) {
         header("Location: usuarios.php?alerta=Usuário não encontrado");
         exit;
     }
-} else {
+ else {
     // Se não foi fornecida uma matrícula, redireciona para a página de usuários
     header("Location: usuarios.php");
     exit;
@@ -221,6 +221,6 @@ input[type="submit"]:hover {
         </div>
     </div>
 <div class="espaço"></div>
-
+<?php include 'bases/rodape.php' ?>
 </body>
 </html>

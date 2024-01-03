@@ -11,6 +11,9 @@ if(!isset($_SESSION["matricula"])){
 ?>
 
 <title>PotiEmpresta</title>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+
 <style>
       body{
         background-color: #BEDCEF;
@@ -64,9 +67,6 @@ input[type="submit"]:hover {
       <td><?php  echo $value['descricao'] ?></td>
       <td><?php  echo $value['quantidade'];?></td>
 
-    <td>  <div class="bt">
-        <a href="item.php">Ver detalhes</a>
-    </div></td>
 
     </tr>
   </tbody>

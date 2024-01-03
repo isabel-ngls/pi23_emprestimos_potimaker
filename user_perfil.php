@@ -1,6 +1,6 @@
 <?php
 require "config.php";
-
+include "user_login_back.php";
 session_start();
 if(!isset($_SESSION["matricula"])){
   header("Location:index.php");
@@ -14,33 +14,31 @@ if(!isset($_SESSION["matricula"])){
 <html lang="pt-br">
 <head>
 <?php include 'bases/head.php' ?>
+
 <title>Meu Perfil</title>
 <link rel="stylesheet" type="text/css" href="src/css/perfil.css" />
 <style>
-  .logout{
-    background-color: #5FB8C6;
-    display: inline-block;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-right: 25px;
-    padding-left: 25px;
-    position: static;
-    text-align: justify;
-    border-radius: 50px;
-    font-size: 15px;
-    font-weight: bold;
-    box-shadow: 10px 5px 5px #315754;
-    transition: all 0.4s ease;
-    margin-left: 185px;
-    color: #ffff;
+  .buy-button {
+    background-color: #3598B2;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
     font-family: 'Lexend', sans-serif;
-    border: white;
-  }
+}
 
-  .logout:hover{
-    color: #5EB9C5;
-    background-color: #f5f5f5;
-  }
+.buy-button:hover {
+    background-color: #78D5E1;
+}
+a{
+  color: white;
+}
+a:hover{
+  color: white;
+}
 </style>
 <body>
 
@@ -51,29 +49,26 @@ if(!isset($_SESSION["matricula"])){
   <div class="left-container">
     <img src="src/imagens/userr.png" alt="Ícone de estudante">
     <h2 class="gradienttext">Usuário: <br></h2>
-    <h2 class="gradienttext"><?php echo  $_SESSION["matricula"];?></h2>
-   <!-- <p class="centralizar">Matrícula: 00000000000000</p>
-    <p class="centralizar">Email: aluno@escolar.com</p> -->
+    <h2 class="gradienttext"><?php echo  $_SESSION["nome"];?></h2>
+  
   </div>
   <div class="right-container">
-  <a href="apostilas.php">Ir para página de apostilas</a>
-    <h3 class="gradienttext">Apostilas emprestadas</h3>
+
+    <h3 class="gradienttext">Seus Dados</h3>
     <table>
-        <tr>
-            <td>Apostila 1</td>
-            <td>Data: 00/00/00</td>
-          </tr>
-      <tr>
-        <td>Apostila 2</td>
-        <td>Data: 00/00/00</td>
+
+        <td><p>Matrícula:</p><?php echo  $_SESSION["matricula"];?></td>
+       
       </tr>
       <tr>
-        <td>Apostila 3</td>
-        <td>Data: 00/00/00</td>
+      <td><p>E-mail:</p><?php echo  $_SESSION["email"];?></td>
+       
       </tr>
       <tr>
-        <td>Apostila 4</td>
-        <td>Data: 00/00/00</td>
+        <td>
+        <button class="buy-button"> <a href="apostilas.php">Ir para página de apostilas</button>
+      </td>
+       
       </tr>
     </table>
 

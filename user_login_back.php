@@ -1,3 +1,4 @@
+
 <?php
 include "config.php";
 
@@ -12,32 +13,30 @@ if(isset($_POST['criar'])){
     $senha_cripto=md5($senha);
 
 
-$sql = $pdo-> prepare(" SELECT matricula FROM usuario WHERE matricula='$matricula' AND senha='$senha_cripto' ");
-//executa
-$sql->execute();
-$linhas= $sql-> rowCount();
-
-
-if($linhas >=1){
- 
-  session_start();
-  $_SESSION['matricula'] = $matricula;
-  //$_SESSION['nome'] = $linhas['nome'];
-  header('location: user_perfil.php');
-
-}else {
-echo "erro";
-$sql->execute();
-header("Location:index.php");      }
-
-
-}
+    $sql = $pdo->prepare("SELECT * FROM usuario WHERE matricula = :matricula AND senha = :senha_cripto");
+    $sql->bindParam(':matricula', $matricula);
+    $sql->bindParam(':senha_cripto', $senha_cripto);
+    $sql->execute();
+    
+    $usuario = $sql->fetch(PDO::FETCH_ASSOC);
+    
+    if ($usuario) {
+        session_start();
+        $_SESSION['matricula'] = $usuario['matricula'];
+        $_SESSION['email'] = $usuario['email_escolar']; 
+        $_SESSION['nome'] = $usuario['nome'];
+        
+        // Acessa o nome do array de resultados
+       header('Location: user_perfil.php');
+        exit;
+    } else {
+        echo "Erro";
+        header("Location: user_login_front.php?alerta=Matrícula e/ou senha incorretos");
+        exit;
+    }
     
 
-
-
-
-
+}
 
 
 ?>

@@ -71,15 +71,10 @@ a:hover{
        
       </tr>
     </table>
-
-   
-
-  
-
+    <a href="apostilas.php" class="classe1"> 
+      <i class="fa-solid fa-book-bookmark"></i> Reservar apostila</a>
 </div>
 </div>
-
-
 </div>
 
 <?php include 'bases/rodape.php' ?>

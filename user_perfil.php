@@ -41,6 +41,27 @@ if(!isset($_SESSION["matricula"])){
     color: #5EB9C5;
     background-color: #f5f5f5;
   }
+
+  .classe1{
+    background-color: #D7F7FD;
+    color: #49CBB3;
+    display: inline-block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 25px;
+    padding-left: 25px;
+    position: static;
+    text-align: justify;
+    border-radius: 50px;
+    font-size: 15px;
+    font-weight: bold;
+    box-shadow: 10px 5px 5px #315754;
+    transition: all 0.4s ease;
+  }
+
+  .classe1:hover{
+    color: #279BAB;
+  }
 </style>
 <body>
 
@@ -56,7 +77,6 @@ if(!isset($_SESSION["matricula"])){
     <p class="centralizar">Email: aluno@escolar.com</p> -->
   </div>
   <div class="right-container">
-  <a href="apostilas.php">Ir para página de apostilas</a>
     <h3 class="gradienttext">Apostilas emprestadas</h3>
     <table>
         <tr>
@@ -76,15 +96,10 @@ if(!isset($_SESSION["matricula"])){
         <td>Data: 00/00/00</td>
       </tr>
     </table>
-
-   
-
-  
-
+    <a href="apostilas.php" class="classe1"> 
+      <i class="fa-solid fa-book-bookmark"></i> Reservar apostila</a>
 </div>
 </div>
-
-
 </div>
 
 <?php include 'bases/rodape.php' ?>

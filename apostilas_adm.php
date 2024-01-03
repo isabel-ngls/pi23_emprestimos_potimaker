@@ -1,5 +1,5 @@
 <?php
-// PARA O FRONT: não precisa de html e css nessa página. Ela é apenas programação, não aparece para io user
+
 require 'config.php';
 //require "ver_loginexiste.php";
 
@@ -54,16 +54,21 @@ if(isset($_POST['criar'])){
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<?php include 'bases/head.php' ?>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Gerenciar Apostilas</title>
   <link rel="stylesheet" type="text/css" href="src/css/admin.css" />
-  
+       <style>
+        .esp{
+          margin-top: 50px;
+        }
+       </style>
   <?php include 'bases/nav_in.php' ?>
 </head>
 <body>
 
-<div class="title"><h1>Administração de Apostilas</h1></div>
+<div class="title esp"><h1>Administração de Apostilas</h1></div>
 
 <p>
   <?php foreach ($dadosApostila as $key => $value ){ 

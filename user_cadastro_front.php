@@ -148,6 +148,10 @@ input[type="submit"]:hover {
         <!--formulário--> 
 
             <form action="user_cadastro_back.php" method="post">
+            <div class="input-group">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+                </div>
                 <div class="input-group">
                     <label for="email">Email:</label>
                     <input type="email" id="email" name="email" placeholder="Digite seu endereço de email" required>

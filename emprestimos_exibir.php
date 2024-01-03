@@ -35,11 +35,19 @@ if(isset($_GET['delete'])){
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="src/css/admin.css" />
-  <title>Document</title>
+  <title>Gerenciar empréstimos</title>
+  <style>
+        .esp{
+          margin-top: 50px;
+        }
+        .right-container.aumentar {
+          height: 240px; 
+        }
+       </style>
 </head>
 <body>
   <p>
-    <h1>Administração de Emprestimos</h1>
+    <h1 class="esp" >Administração de Empréstimos</h1>
     <?php 
       foreach ($dadosEmprestimo as $key => $value ){
           echo '<br>'; ?>
@@ -52,11 +60,11 @@ if(isset($_GET['delete'])){
            ?>
         </div>
 
-        <div class="right-container">
+        <div class="right-container aumentar">
         <p class="text1"> ID: <?php echo $value['id']; ?> </p>
-        <p class="text1"> DATA DE EMPRESTIMO: <?php echo $value['data_emprestimo'] ; ?> </p>
+        <p class="text1"> DATA DE EMPRÉSTIMO: <?php echo $value['data_emprestimo'] ; ?> </p>
         <p class="text1"> DATA DE DEVOLUÇÃO: <?php echo $value['data_devolucao'] ;  ?> </p>
-        <p class="text1"> USUARIO: <?php echo $value['matricula_usuario'] ; ?> </p>
+        <p class="text1"> USUÁRIO: <?php echo $value['matricula_usuario'] ; ?> </p>
         <p class="text1"> ISBN: <?php echo $value['isbn_apostila'] ;  ?> </p>
 <br>
         </div>

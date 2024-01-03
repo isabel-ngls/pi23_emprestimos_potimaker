@@ -35,8 +35,8 @@ if(!isset($_SESSION["matricula"])){
   <a href="apostilas_cadastro.php"><i class="fa-solid fa-file-circle-plus"></i>  Cadastrar apostilas</a> <br>
   <a href="apostilas_adm.php"><i class="fa-solid fa-list-check"></i>  Gerenciar apostilas</a> <br>
   <a href="user_adm.php"><i class="fa-solid fa-people-roof"></i>  Gerenciar usuários</a><br>
-  <a href="emprestimo_add_front.php"><i class="fa-solid fa-people-roof"></i>  Cadastrar emprestimo</a><br>
-  <a href="emprestimos_exibir.php"><i class="fa-solid fa-people-roof"></i>  Gerenciar Emprestimos</a>
+  <a href="emprestimo_add_front.php"><i class="fa-regular fa-calendar-days"></i>  Cadastrar empréstimo</a><br>
+  <a href="emprestimos_exibir.php"><i class="fa-regular fa-calendar-check"></i>  Gerenciar empréstimo</a>
 
     
 </div>
